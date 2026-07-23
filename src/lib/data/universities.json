@@ -1,0 +1,5761 @@
+{
+  "UK": [
+    {
+      "name": "University of Oxford",
+      "logo": "https://www.ox.ac.uk/sites/all/themes/custom/oxweb/logo.svg",
+      "website": "https://www.ox.ac.uk",
+      "about": "The oldest university in the English-speaking world, renowned for its academic excellence and historic collegiate system.",
+      "address": "Wellington Square",
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 3,
+        "the": 1,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 7.5,
+        "toefl": 110,
+        "pte": 76,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "First-class honors equivalent",
+        "applicationFee": {
+          "amount": 75,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "January 24",
+        "notes": "Highly competitive, requires interview."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1300,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 850,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Clarendon Fund and various college-specific grants."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Computer Science",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 32760,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7.5,
+            "toefl": 110,
+            "minGpa": "First-class honors",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Cambridge",
+      "logo": "https://www.cam.ac.uk/sites/www.cam.ac.uk/themes/cambridge/images/logo.svg",
+      "website": "https://www.cam.ac.uk",
+      "about": "A globally revered institution with a rich history of scientific discovery and humanities research.",
+      "address": "The Old Schools, Trinity Ln",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 2,
+        "the": 3,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 7.5,
+        "toefl": 110,
+        "pte": 75,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "First-class honors equivalent",
+        "applicationFee": {
+          "amount": 75,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "January",
+        "notes": "Requires strong academic references."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1250,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 800,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Gates Cambridge Scholarships available for international students."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MPhil in Machine Learning",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "1 year",
+          "intakes": [
+            "October"
+          ],
+          "fee": 37500,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7.5,
+            "toefl": 110,
+            "minGpa": "First-class honors",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Imperial College London",
+      "logo": "https://www.imperial.ac.uk/media/imperial-college/logos/Imperial_Logo_Blue.svg",
+      "website": "https://www.imperial.ac.uk",
+      "about": "A science-based institution consistently ranked among the top STEM universities globally.",
+      "address": "Exhibition Rd, South Kensington",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 6,
+        "the": 10,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 7,
+        "toefl": 100,
+        "pte": 69,
+        "gre": 314,
+        "gmat": null,
+        "minGpa": "Upper second-class honors",
+        "applicationFee": {
+          "amount": 80,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Strong focus on mathematics and analytical skills."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1500,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 1000,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "President's PhD Scholarships and various MSc grants."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Artificial Intelligence",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 35900,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 100,
+            "minGpa": "First-class",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University College London (UCL)",
+      "logo": "https://www.ucl.ac.uk/sites/all/themes/ucl_indigo/logo.svg",
+      "website": "https://www.ucl.ac.uk",
+      "about": "London's global university, offering highly diverse and interdisciplinary degree programs.",
+      "address": "Gower St, Bloomsbury",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 9,
+        "the": 22,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 92,
+        "pte": 62,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Upper second-class honors",
+        "applicationFee": {
+          "amount": 90,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "March 31",
+        "notes": "Competitive across all departments."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1500,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 950,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "UCL Global Masters Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Management",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 34100,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 100,
+            "minGpa": "Upper second-class",
+            "workExperience": "Not required but preferred"
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Edinburgh",
+      "logo": "https://www.ed.ac.uk/sites/all/themes/uoe/logo.png",
+      "website": "https://www.ed.ac.uk",
+      "about": "One of Scotland's ancient universities, known for pioneering work in AI and humanities.",
+      "address": "Old College, South Bridge",
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 22,
+        "the": 29,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 92,
+        "pte": 61,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Upper second-class honors",
+        "applicationFee": {
+          "amount": 50,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "High demand for Informatics and Data Science."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1100,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 700,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Edinburgh Global Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Data Science",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 33300,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 100,
+            "minGpa": "Upper second-class",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Manchester",
+      "logo": "https://www.manchester.ac.uk/media/brand/logo.svg",
+      "website": "https://www.manchester.ac.uk",
+      "about": "A major civic university with a huge international student body and strong industry ties.",
+      "address": "Oxford Rd",
+      "city": "Manchester",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 32,
+        "the": 54,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": 59,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Upper second-class honors",
+        "applicationFee": {
+          "amount": 60,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Business school may require GMAT."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1000,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 600,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Global Futures Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Finance",
+          "level": "Postgraduate",
+          "department": "Finance & Economics",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 31000,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 100,
+            "minGpa": "Upper second-class",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "King's College London",
+      "logo": "https://www.kcl.ac.uk/themes/custom/kcl/logo.svg",
+      "website": "https://www.kcl.ac.uk",
+      "about": "Renowned for its health, law, and social sciences programs right in the heart of London.",
+      "address": "Strand",
+      "city": "London",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 40,
+        "the": 35,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 7,
+        "toefl": 100,
+        "pte": 69,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Upper second-class honors",
+        "applicationFee": {
+          "amount": 75,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Stringent English language requirements."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1400,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 950,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "King's International Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Global Health",
+          "level": "Postgraduate",
+          "department": "Health Sciences",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 29850,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 100,
+            "minGpa": "Upper second-class",
+            "workExperience": "Relevant experience preferred"
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Warwick",
+      "logo": "https://warwick.ac.uk/site-elements/logo.svg",
+      "website": "https://warwick.ac.uk",
+      "about": "A campus university known for its elite business school and strong mathematics department.",
+      "address": "Coventry CV4 7AL",
+      "city": "Coventry",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 67,
+        "the": 78,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 92,
+        "pte": 62,
+        "gre": null,
+        "gmat": 650,
+        "minGpa": "Upper second-class honors",
+        "applicationFee": {
+          "amount": 60,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "July 31",
+        "notes": "GMAT heavily recommended for Business."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 950,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 550,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Chancellor's International Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MBA",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 45950,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 100,
+            "minGpa": "Upper second-class",
+            "workExperience": "3 years minimum"
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Bristol",
+      "logo": "https://www.bristol.ac.uk/medialibrary/sites/bris/logo.svg",
+      "website": "https://www.bristol.ac.uk",
+      "about": "A top-tier research university set in one of the UK's most vibrant and creative cities.",
+      "address": "Senate House, Tyndall Ave",
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 55,
+        "the": 76,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": 60,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Upper second-class honors",
+        "applicationFee": {
+          "amount": 50,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "High demand for Engineering and Tech programs."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1050,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 650,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Think Big Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Robotics",
+          "level": "Postgraduate",
+          "department": "Engineering",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 28900,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "Upper second-class",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Glasgow",
+      "logo": "https://www.gla.ac.uk/media/Media_logo.svg",
+      "website": "https://www.gla.ac.uk",
+      "about": "One of the oldest universities in the UK, highly respected for medicine, vet science, and engineering.",
+      "address": "University Avenue",
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 76,
+        "the": 82,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": 60,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2:1 equivalent",
+        "applicationFee": {
+          "amount": 25,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "July 25",
+        "notes": "Pre-sessional English courses available."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 900,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 500,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Undergraduate and Postgraduate Excellence Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Aeronautical Engineering",
+          "level": "Postgraduate",
+          "department": "Aviation & Aerospace",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 27500,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "2:1 equivalent",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Birmingham",
+      "logo": "https://www.birmingham.ac.uk/images/logo.svg",
+      "website": "https://www.birmingham.ac.uk",
+      "about": "A leading research university with a beautiful red-brick campus and strong ties to industry.",
+      "address": "Edgbaston",
+      "city": "Birmingham",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 84,
+        "the": 108,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 80,
+        "pte": 59,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2:1 equivalent",
+        "applicationFee": {
+          "amount": 50,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "July 1",
+        "notes": "Very popular with international engineering students."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 950,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 550,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Global Masters Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "BEng Civil Engineering",
+          "level": "Undergraduate",
+          "department": "Engineering",
+          "duration": "3 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 25860,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 80,
+            "minGpa": "High school equivalent",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Sheffield",
+      "logo": "https://www.sheffield.ac.uk/themes/custom/sheffield/logo.svg",
+      "website": "https://www.sheffield.ac.uk",
+      "about": "Known for outstanding student experience and world-leading engineering and materials research.",
+      "address": "Western Bank",
+      "city": "Sheffield",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 104,
+        "the": 114,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 80,
+        "pte": 56,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2:1 equivalent",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "No application fee for standard PG courses."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 850,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 450,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "International Merit Scholarships worth up to 50% of tuition."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Data Analytics",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 26500,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 88,
+            "minGpa": "2:1 equivalent",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Leeds",
+      "logo": "https://www.leeds.ac.uk/logo.svg",
+      "website": "https://www.leeds.ac.uk",
+      "about": "One of the largest higher education institutions in the UK, highly ranked for business and media.",
+      "address": "Woodhouse",
+      "city": "Leeds",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 86,
+        "the": 128,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 92,
+        "pte": 64,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2:1 equivalent",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "June 30",
+        "notes": "Media and communications courses highly competitive."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 900,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 500,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Various international excellence scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MA Corporate Communications",
+          "level": "Postgraduate",
+          "department": "Marketing & Media",
+          "duration": "1 year",
+          "intakes": [
+            "September"
+          ],
+          "fee": 25250,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 92,
+            "minGpa": "2:1 equivalent",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Nottingham",
+      "logo": "https://www.nottingham.ac.uk/logo.svg",
+      "website": "https://www.nottingham.ac.uk",
+      "about": "A truly global university with campuses in the UK, China, and Malaysia. Strong in pharmacy and engineering.",
+      "address": "University Park",
+      "city": "Nottingham",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": 100,
+        "the": 130,
+        "note": "Russell Group Member"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 80,
+        "pte": 65,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2:1 or 2:2 depending on course",
+        "applicationFee": {
+          "amount": 50,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "August 10",
+        "notes": "Wide range of pathway programs."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 850,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 480,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Developing Solutions Masters Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MPharm Pharmacy",
+          "level": "Undergraduate",
+          "department": "Health Sciences",
+          "duration": "4 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 27200,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 100,
+            "minGpa": "High school equivalent",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Cumbria",
+      "logo": "https://www.cumbria.ac.uk/logo.svg",
+      "website": "https://www.cumbria.ac.uk",
+      "about": "A modern university focused on applied learning, situated close to the beautiful Lake District.",
+      "address": "Fusehill St",
+      "city": "Carlisle",
+      "country": "United Kingdom",
+      "region": "UK",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Post-1992 University, high employability rate"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 80,
+        "pte": 54,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2:2 equivalent",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Very accessible for international students."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 750,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "accommodationMonthly": {
+          "amount": 400,
+          "currency": "GBP",
+          "symbol": "£"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "International student bursaries."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-year Graduate Route visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MBA Tourism Management",
+          "level": "Postgraduate",
+          "department": "Hospitality & Tourism",
+          "duration": "1 year",
+          "intakes": [
+            "September",
+            "January"
+          ],
+          "fee": 16500,
+          "currency": "GBP",
+          "symbol": "£",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 80,
+            "minGpa": "2:2 equivalent",
+            "workExperience": "Recommended"
+          }
+        }
+      ]
+    }
+  ],
+  "Europe": [
+    {
+      "name": "Technical University of Munich (TUM)",
+      "logo": "https://www.tum.de/logo.svg",
+      "website": "https://www.tum.de",
+      "about": "One of Europe's top universities for engineering, technology, and natural sciences.",
+      "address": "Arcisstraße 21",
+      "city": "Munich",
+      "country": "Germany",
+      "region": "Europe",
+      "ranking": {
+        "qs": 37,
+        "the": 30,
+        "note": "Excellence University in Germany"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 88,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Varies by aptitude assessment",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "May 31",
+        "notes": "Requires VPD via uni-assist."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1200,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 750,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Deutschlandstipendium available."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "18-month job seeker visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Informatics",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "2 years",
+          "intakes": [
+            "October",
+            "April"
+          ],
+          "fee": 6000,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 88,
+            "minGpa": "Good bachelor degree",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "EBS University",
+      "logo": "https://www.ebs.edu/logo.svg",
+      "website": "https://www.ebs.edu",
+      "about": "A prestigious private business and law school located in the Frankfurt Rhine-Main region.",
+      "address": "Rheingaustraße 1",
+      "city": "Oestrich-Winkel",
+      "country": "Germany",
+      "region": "Europe",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "FIBAA Accredited"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": null,
+        "gre": null,
+        "gmat": 600,
+        "minGpa": "Equivalent to 2.5 German grade",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Private institution with rolling admissions."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 950,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 500,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Merit and need-based financial aid."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "18-month job seeker visa",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Master in Finance",
+          "level": "Postgraduate",
+          "department": "Finance & Economics",
+          "duration": "1.5 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 26000,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "2.5 German scale",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Delft University of Technology",
+      "logo": "https://www.tudelft.nl/logo.svg",
+      "website": "https://www.tudelft.nl",
+      "about": "The oldest and largest Dutch public technical university, famous for engineering and architecture.",
+      "address": "Mekelweg 5",
+      "city": "Delft",
+      "country": "Netherlands",
+      "region": "Europe",
+      "ranking": {
+        "qs": 47,
+        "the": 48,
+        "note": "Top 20 globally for Engineering"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "75% or 3.0/4.0 minimum",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "April 1",
+        "notes": "High math prerequisites."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1100,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 600,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Justus & Louise van Effen Excellence Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-year Orientation Year visa",
+        "workHoursDuringStudy": 16
+      },
+      "courses": [
+        {
+          "name": "MSc Aerospace Engineering",
+          "level": "Postgraduate",
+          "department": "Aviation & Aerospace",
+          "duration": "2 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 20560,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "75%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Amsterdam",
+      "logo": "https://www.uva.nl/logo.svg",
+      "website": "https://www.uva.nl",
+      "about": "A modern, research-intensive university with a wide array of English-taught programs in the Dutch capital.",
+      "address": "1012 WP",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "region": "Europe",
+      "ranking": {
+        "qs": 53,
+        "the": 61,
+        "note": "Highly ranked for Media and Communication"
+      },
+      "admissions": {
+        "ielts": 7,
+        "toefl": 100,
+        "pte": 68,
+        "gre": null,
+        "gmat": 620,
+        "minGpa": "Equivalent to Dutch 7.0",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "March 1",
+        "notes": "GMAT required for business degrees."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1300,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 800,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Amsterdam Merit Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-year Orientation Year visa",
+        "workHoursDuringStudy": 16
+      },
+      "courses": [
+        {
+          "name": "BSc Business Administration",
+          "level": "Undergraduate",
+          "department": "Business & Management",
+          "duration": "3 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 12000,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 92,
+            "minGpa": "High school diploma with strong math",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Malta",
+      "logo": "https://www.um.edu.mt/logo.svg",
+      "website": "https://www.um.edu.mt",
+      "about": "The highest teaching institution in Malta, offering affordable European education in English.",
+      "address": "Msida MSD 2080",
+      "city": "Msida",
+      "country": "Malta",
+      "region": "Europe",
+      "ranking": {
+        "qs": 801,
+        "the": null,
+        "note": "Oldest university in Malta"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 80,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Recognized high school or bachelor diploma",
+        "applicationFee": {
+          "amount": 95,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "July 21",
+        "notes": "All courses are taught in English."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 800,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 400,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Tuition fee waivers for exceptional students."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "9 months",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MD Medicine",
+          "level": "Undergraduate",
+          "department": "Health Sciences",
+          "duration": "5 years",
+          "intakes": [
+            "October"
+          ],
+          "fee": 26000,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "Excellent science grades",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "London School of Commerce Malta",
+      "logo": "https://www.lscmalta.edu.mt/logo.png",
+      "website": "https://www.lscmalta.edu.mt",
+      "about": "A global provider of higher education offering UK degrees from its campus in Malta.",
+      "address": "Europa Centre, St. Anne Street",
+      "city": "Floriana",
+      "country": "Malta",
+      "region": "Europe",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Awards degrees from UK partners"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Bachelor degree",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Extremely fast admission turnaround."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 750,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 400,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": false,
+          "details": "Already highly subsidized fees."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "9 months",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MBA Global",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "1.5 years",
+          "intakes": [
+            "February",
+            "June",
+            "October"
+          ],
+          "fee": 6950,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6,
+            "toefl": null,
+            "minGpa": "Pass",
+            "workExperience": "Not strictly required"
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Cyprus",
+      "logo": "https://www.ucy.ac.cy/logo.svg",
+      "website": "https://www.ucy.ac.cy",
+      "about": "The leading public research university in Cyprus, quickly rising in international rankings.",
+      "address": "1 University Avenue",
+      "city": "Nicosia",
+      "country": "Cyprus",
+      "region": "Europe",
+      "ranking": {
+        "qs": 473,
+        "the": 501,
+        "note": "Top public university in Cyprus"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 80,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Equivalent to 6.5/10",
+        "applicationFee": {
+          "amount": 50,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "March 31",
+        "notes": "Many PG courses offered fully in English."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 800,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 450,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Government and internal merit scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "60 days job search",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Data Science",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "1.5 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 5125,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 80,
+            "minGpa": "6.5/10",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Frederick University",
+      "logo": "https://www.frederick.ac.cy/logo.png",
+      "website": "https://www.frederick.ac.cy",
+      "about": "An energetic private university in Cyprus offering highly specialized engineering and arts courses.",
+      "address": "7, Y. Frederickou Street",
+      "city": "Nicosia",
+      "country": "Cyprus",
+      "region": "Europe",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Strong industry partnerships"
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 70,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school pass",
+        "applicationFee": {
+          "amount": 55,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "August",
+        "notes": "Very supportive to international students."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 750,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 400,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Academic excellence scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "60 days",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "BSc Civil Engineering",
+          "level": "Undergraduate",
+          "department": "Engineering",
+          "duration": "4 years",
+          "intakes": [
+            "September",
+            "February"
+          ],
+          "fee": 9000,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 5.5,
+            "toefl": 70,
+            "minGpa": "Pass",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Latvia",
+      "logo": "https://www.lu.lv/logo.svg",
+      "website": "https://www.lu.lv",
+      "about": "One of the largest comprehensive research universities in the Baltic States.",
+      "address": "Raina Blvd 19",
+      "city": "Riga",
+      "country": "Latvia",
+      "region": "Europe",
+      "ranking": {
+        "qs": 801,
+        "the": 1001,
+        "note": "Leading university in Latvia"
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 72,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "60% minimum",
+        "applicationFee": {
+          "amount": 150,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "July 1",
+        "notes": "Affordable European education."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 600,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 250,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Latvian state scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "6 months",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "BSc Computer Science",
+          "level": "Undergraduate",
+          "department": "Computer Science & IT",
+          "duration": "3 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 3200,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 5.5,
+            "toefl": 72,
+            "minGpa": "60%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Riga Technical University",
+      "logo": "https://www.rtu.lv/logo.png",
+      "website": "https://www.rtu.lv",
+      "about": "The oldest technical university in the Baltics, driving engineering and tech innovation.",
+      "address": "Kalku iela 1",
+      "city": "Riga",
+      "country": "Latvia",
+      "region": "Europe",
+      "ranking": {
+        "qs": 751,
+        "the": 1001,
+        "note": "Strong in STEM"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 78,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "60%",
+        "applicationFee": {
+          "amount": 150,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "July 1",
+        "notes": "Requires online entrance exam for IT."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 600,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "accommodationMonthly": {
+          "amount": 250,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "scholarships": {
+          "available": false,
+          "details": "Fees are heavily subsidized."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "6 months",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "MSc Telecommunications",
+          "level": "Postgraduate",
+          "department": "Engineering",
+          "duration": "2 years",
+          "intakes": [
+            "September",
+            "February"
+          ],
+          "fee": 4000,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 78,
+            "minGpa": "60%",
+            "workExperience": null
+          }
+        }
+      ]
+    }
+  ],
+  "Australia": [
+    {
+      "name": "University of Melbourne",
+      "logo": "https://www.unimelb.edu.au/logo.svg",
+      "website": "https://www.unimelb.edu.au",
+      "about": "Australia's leading comprehensive research university, located in the cultural capital.",
+      "address": "Parkville VIC 3010",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 14,
+        "the": 34,
+        "note": "Group of Eight Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 79,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "70% or equivalent",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "applicationDeadline": "May 31",
+        "notes": "Highly competitive admissions."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2200,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "accommodationMonthly": {
+          "amount": 1200,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Melbourne International Undergraduate Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-4 years",
+        "workHoursDuringStudy": 24
+      },
+      "courses": [
+        {
+          "name": "Master of Information Technology",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "2 years",
+          "intakes": [
+            "March",
+            "July"
+          ],
+          "fee": 48500,
+          "currency": "AUD",
+          "symbol": "A$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "65%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Sydney",
+      "logo": "https://www.sydney.edu.au/logo.svg",
+      "website": "https://www.sydney.edu.au",
+      "about": "Australia's oldest university, globally renowned for research, teaching, and employability.",
+      "address": "Camperdown NSW 2006",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 19,
+        "the": 54,
+        "note": "Group of Eight Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 85,
+        "pte": 61,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "65% equivalent",
+        "applicationFee": {
+          "amount": 125,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "applicationDeadline": "January 31",
+        "notes": "Requires strict portfolio for Arts."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2500,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "accommodationMonthly": {
+          "amount": 1500,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Sydney International Scholar Awards."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-4 years",
+        "workHoursDuringStudy": 24
+      },
+      "courses": [
+        {
+          "name": "Master of Commerce",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "1.5 years",
+          "intakes": [
+            "March",
+            "August"
+          ],
+          "fee": 52000,
+          "currency": "AUD",
+          "symbol": "A$",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 96,
+            "minGpa": "65%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "UNSW Sydney",
+      "logo": "https://www.unsw.edu.au/logo.svg",
+      "website": "https://www.unsw.edu.au",
+      "about": "UNSW Sydney is a top-tier global public research university, a founding member of the Group of Eight, and celebrated globally for leading engineering, technology, and business frameworks.",
+      "address": "High Street, Kensington",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 19,
+        "the": 84,
+        "note": null
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": 64,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "3.2 out of 4.0 scale or 70%+ equivalent",
+        "applicationFee": {
+          "amount": 150,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Term 1: Nov 30, Term 2: Mar 31, Term 3: Jul 31",
+        "notes": "AGSM MBA tracks possess highly structured custom assessment frameworks."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2600,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1600,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "International Scientific and Business Excellence awards cover full or partial tuition grants."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2 years",
+        "workHoursDuringStudy": 48
+      },
+      "courses": [
+        {
+          "name": "Master of Commerce (Extension)",
+          "level": "Postgraduate",
+          "department": "UNSW Business School",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "June",
+            "September"
+          ],
+          "fee": 56500,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 94,
+            "minGpa": "Credit average equivalent performance",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Master of Engineering (Mechanical Engineering)",
+          "level": "Postgraduate",
+          "department": "Engineering",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "September"
+          ],
+          "fee": 54000,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "4-year Washington Accord accredited Engineering Bachelor degree",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Bachelor of Data Science and Decisions",
+          "level": "Undergraduate",
+          "department": "Computer Science & IT",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "September"
+          ],
+          "fee": 51500,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "Highly advanced senior math profiles required",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Australian National University (ANU)",
+      "logo": "https://www.anu.edu.au/logo.svg",
+      "website": "https://www.anu.edu.au",
+      "about": "The national research university located in the capital, leading in politics and science.",
+      "address": "Acton ACT 2601",
+      "city": "Canberra",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 34,
+        "the": 62,
+        "note": "Group of Eight Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 80,
+        "pte": 64,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "5.0/7.0 scale",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "applicationDeadline": "December",
+        "notes": "High demand for policy and economics."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2000,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "accommodationMonthly": {
+          "amount": 1100,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "ANU Chancellor's International Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-4 years",
+        "workHoursDuringStudy": 24
+      },
+      "courses": [
+        {
+          "name": "Master of Public Policy",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "2 years",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 46000,
+          "currency": "AUD",
+          "symbol": "A$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 80,
+            "minGpa": "5.0/7.0",
+            "workExperience": "Recommended"
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Queensland",
+      "logo": "https://www.uq.edu.au/logo.svg",
+      "website": "https://www.uq.edu.au",
+      "about": "A research-intensive university with beautiful campuses, famous for medical and environmental sciences.",
+      "address": "St Lucia QLD 4072",
+      "city": "Brisbane",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 43,
+        "the": 53,
+        "note": "Group of Eight Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 87,
+        "pte": 64,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "4.5/7.0",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "applicationDeadline": "November 30",
+        "notes": "Very popular for life sciences."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2100,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "accommodationMonthly": {
+          "amount": 1100,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Global Excellence Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-4 years",
+        "workHoursDuringStudy": 24
+      },
+      "courses": [
+        {
+          "name": "Master of Biotechnology",
+          "level": "Postgraduate",
+          "department": "Health Sciences",
+          "duration": "1.5 years",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 44000,
+          "currency": "AUD",
+          "symbol": "A$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 87,
+            "minGpa": "4.5/7.0",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Monash University",
+      "logo": "https://www.monash.edu/logo.svg",
+      "website": "https://www.monash.edu",
+      "about": "Australia's largest university, known for an extensive international footprint and top-tier pharmacy program.",
+      "address": "Wellington Rd, Clayton",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 42,
+        "the": 44,
+        "note": "Group of Eight Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 79,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "60%",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Massive course selection."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2200,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "accommodationMonthly": {
+          "amount": 1200,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Monash International Leadership Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-4 years",
+        "workHoursDuringStudy": 24
+      },
+      "courses": [
+        {
+          "name": "Master of Data Science",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "2 years",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 46000,
+          "currency": "AUD",
+          "symbol": "A$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "60%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Western Australia",
+      "logo": "https://www.uwa.edu.au/logo.svg",
+      "website": "https://www.uwa.edu.au",
+      "about": "Leading the charge in mining, engineering, and marine biology on Australia's west coast.",
+      "address": "35 Stirling Hwy",
+      "city": "Perth",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 72,
+        "the": 131,
+        "note": "Group of Eight Member"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 82,
+        "pte": 64,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "60%",
+        "applicationFee": {
+          "amount": 125,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Perth is a regional hub, offering extended post-study visas."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1900,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "accommodationMonthly": {
+          "amount": 1000,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Global Excellence Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "3-5 years (Regional status)",
+        "workHoursDuringStudy": 24
+      },
+      "courses": [
+        {
+          "name": "Master of Professional Engineering",
+          "level": "Postgraduate",
+          "department": "Engineering",
+          "duration": "2 years",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 43500,
+          "currency": "AUD",
+          "symbol": "A$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 82,
+            "minGpa": "60%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Adelaide University",
+      "logo": "https://www.adelaide.edu.au/logo.svg",
+      "website": "https://www.adelaide.edu.au",
+      "about": "Formed through the historic merger of the University of Adelaide and University of South Australia, Adelaide University is a powerhouse institution, launching full unified academic structures as a Group of Eight member.",
+      "address": "North Terrace",
+      "city": "Adelaide",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 82,
+        "the": 111,
+        "note": "Rankings match ancestral baseline parameters of the historical University of Adelaide institutional framework."
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 79,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "85% for top tiers / 3.0 out of 4.0 equivalent",
+        "applicationFee": {
+          "amount": 150,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Late November for Semester 1 (February intake)",
+        "notes": "Health programs like Nursing and Medicine have higher thresholds (IELTS 7.0) and early capped deadlines."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2100,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1100,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Global Citizens Scholarship provides a 15% to 30% tuition fee reduction for high-achieving international candidates."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2 years",
+        "workHoursDuringStudy": 48
+      },
+      "courses": [
+        {
+          "name": "Master of Business Administration (MBA)",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "1.5 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 49500,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "Bachelor degree or equivalent",
+            "workExperience": "Minimum 2 years professional work experience required"
+          }
+        },
+        {
+          "name": "Bachelor of Computer Science",
+          "level": "Undergraduate",
+          "department": "Computer Science & IT",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 47000,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "High school excellence with strong mathematical track",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Bachelor of Nursing",
+          "level": "Undergraduate",
+          "department": "Health Sciences",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February"
+          ],
+          "fee": 40500,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 94,
+            "minGpa": "Competitive high school completion criteria",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "RMIT University",
+      "logo": "https://www.rmit.edu.au/logo.svg",
+      "website": "https://www.rmit.edu.au",
+      "about": "A global university of technology, design, and enterprise heavily integrated into Melbourne's CBD.",
+      "address": "124 La Trobe St",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 140,
+        "the": 251,
+        "note": "World leader in Art & Design"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 79,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Pass equivalent",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Portfolio required for design."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2200,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "accommodationMonthly": {
+          "amount": 1200,
+          "currency": "AUD",
+          "symbol": "A$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "STEM Scholarships available."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2-4 years",
+        "workHoursDuringStudy": 24
+      },
+      "courses": [
+        {
+          "name": "Master of Animation, Games and Interactivity",
+          "level": "Postgraduate",
+          "department": "Creative Arts & Design",
+          "duration": "2 years",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 38000,
+          "currency": "AUD",
+          "symbol": "A$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "Pass",
+            "workExperience": "Portfolio required"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bond University",
+      "logo": "https://bond.edu.au/logo.svg",
+      "website": "https://bond.edu.au",
+      "about": "Bond University is Australia's first private, non-profit university, renowned for its beautiful Gold Coast campus, accelerated three-semesters-per-year schedule, and world-class student experience metrics.",
+      "address": "14 University Dr, Robina QLD",
+      "city": "Gold Coast",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 551,
+        "the": 401,
+        "note": "Ranked 551-560 bracket in QS 2025 and 401-500 in THE 2025."
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 79,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2.5 out of 4.0 or equivalent",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling admissions across three distinct terms",
+        "notes": "Law programs typically require higher writing band scores in IELTS."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2300,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1350,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "International Undergraduate/Postgraduate Excellence Scholarships provide up to 50% tuition remission."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2 years",
+        "workHoursDuringStudy": 48
+      },
+      "courses": [
+        {
+          "name": "Master of Business Administration (MBA)",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "1 year",
+          "mode": "Full-time (Accelerated)",
+          "intakes": [
+            "January",
+            "May",
+            "September"
+          ],
+          "fee": 44800,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "Recognized Bachelor degree",
+            "workExperience": "3 years work experience required"
+          }
+        },
+        {
+          "name": "Bachelor of Laws (LLB)",
+          "level": "Undergraduate",
+          "department": "Law",
+          "duration": "2.8 years",
+          "mode": "Full-time (Accelerated)",
+          "intakes": [
+            "January",
+            "May",
+            "September"
+          ],
+          "fee": 46000,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 94,
+            "minGpa": "High school entry benchmark score completion",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ozford Institute of Higher Education",
+      "logo": "https://www.ozford.edu.au/wp-content/uploads/2018/06/Ozford-Logo-New.png",
+      "website": "https://www.ozford.edu.au",
+      "about": "Ozford is a private higher education provider located in the center of Melbourne's central business district, offering practical, industry-linked business undergraduate degrees.",
+      "address": "Melbourne, Australia",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Private higher education college focused on undergraduate courses; unranked globally."
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Successful completion of Year 12 high school equivalent",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling admissions, up to 2 weeks before semester begins",
+        "notes": "Applicants must demonstrate genuine student metrics via standard GTE/GS reviews."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2000,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1050,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Bursaries and regional student discounts are occasionally available up to 15% tuition markdown."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2 years",
+        "workHoursDuringStudy": 48
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Business",
+          "level": "Undergraduate",
+          "department": "Business & Management",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "March",
+            "July",
+            "November"
+          ],
+          "fee": 19500,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "Year 12 pass mark framework",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Bachelor of Business (Accounting)",
+          "level": "Undergraduate",
+          "department": "Business & Management",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "March",
+            "July",
+            "November"
+          ],
+          "fee": 19500,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "Year 12 pass mark framework",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Technology Sydney (UTS)",
+      "logo": "https://www.uts.edu.au/sites/default/files/uts-logo.png",
+      "website": "https://www.uts.edu.au",
+      "about": "UTS is a leading technology-focused public university known for its innovative practice-oriented learning model, strong industry connections, and high-impact research capability in central Sydney.",
+      "address": "Sydney, Australia",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 88,
+        "the": 148,
+        "note": null
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 79,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "3.0 out of 4.0 or equivalent secondary/tertiary performance",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "October 30 (Autumn Intake), April 30 (Spring Intake)",
+        "notes": "Direct entry pathways exist via UTS College for students below academic minimums."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2500,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1500,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "UTS Academic Excellence International Scholarship offers up to 20% tuition fee reduction."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2 years",
+        "workHoursDuringStudy": 48
+      },
+      "courses": [
+        {
+          "name": "Master of Information Technology",
+          "level": "Postgraduate",
+          "department": "Engineering and IT",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "August"
+          ],
+          "fee": 48500,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "Bachelor degree in any field or relevant IT background",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Bachelor of Design in Architecture",
+          "level": "Undergraduate",
+          "department": "Design, Architecture and Building",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February"
+          ],
+          "fee": 44200,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "High school completion + portfolio submission",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Western Sydney University",
+      "logo": "https://www.westernsydney.edu.au/__data/assets/image/0007/1569427/wsu-logo.png",
+      "website": "https://www.westernsydney.edu.au",
+      "about": "Western Sydney University is a major public research university spread across Greater Western Sydney, recognized globally for social impact, sustainability, and accessible higher education.",
+      "address": "Sydney, Australia",
+      "city": "Sydney",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 375,
+        "the": 201,
+        "note": "Ranked #1 globally in Times Higher Education Impact Rankings."
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 82,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2.7 out of 4.0 or equivalent high school diploma",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling admissions, recommended 2 months prior to intake",
+        "notes": "Offers regional location benefits for post-study work visa extensions at select campuses."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2100,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1100,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Vice-Chancellor's Academic Excellence Scholarships provide 50% tuition waiver."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2 - 3 years",
+        "workHoursDuringStudy": 48
+      },
+      "courses": [
+        {
+          "name": "Master of Data Science",
+          "level": "Postgraduate",
+          "department": "Computer, Data and Mathematical Sciences",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "March",
+            "July"
+          ],
+          "fee": 36800,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 82,
+            "minGpa": "Bachelor degree in STEM discipline",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Bachelor of Nursing",
+          "level": "Undergraduate",
+          "department": "Nursing and Midwifery",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "March"
+          ],
+          "fee": 34500,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 94,
+            "minGpa": "High school completion with biology/chemistry prerequisites",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Swinburne University of Technology",
+      "logo": "https://www.swinburne.edu.au/static/extra/images/swinburne-logo.png",
+      "website": "https://www.swinburne.edu.au",
+      "about": "Located in Melbourne, Swinburne is renowned for its focus on technology, innovation, industry connections, and work-integrated learning programs embedded across all undergraduate degrees.",
+      "address": "Melbourne, Australia",
+      "city": "Melbourne",
+      "country": "Australia",
+      "region": "Australia",
+      "ranking": {
+        "qs": 291,
+        "the": 201,
+        "note": null
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 79,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2.8 out of 4.0 or equivalent academic standard",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling admissions, ideally 6 weeks before intake",
+        "notes": "Guaranteed professional placement options available on selected bachelor tracks."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2200,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1200,
+          "currency": "AUD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Swinburne International Excellence Scholarship covers up to 30% of tuition fees."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2 years",
+        "workHoursDuringStudy": 48
+      },
+      "courses": [
+        {
+          "name": "Master of Cybersecurity",
+          "level": "Postgraduate",
+          "department": "Software and Electrical Engineering",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "August"
+          ],
+          "fee": 39600,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "Bachelor degree in IT or related quantitative field",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Bachelor of Design (User Experience)",
+          "level": "Undergraduate",
+          "department": "Design",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "August"
+          ],
+          "fee": 37200,
+          "currency": "AUD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 75,
+            "minGpa": "High school completion standard",
+            "workExperience": null
+          }
+        }
+      ]
+    }
+  ],
+  "Singapore": [
+    {
+      "name": "National University of Singapore (NUS)",
+      "logo": "https://www.nus.edu.sg/logo.png",
+      "website": "https://www.nus.edu.sg",
+      "about": "Asia's consistently top-ranked university, offering a global approach to education and research.",
+      "address": "21 Lower Kent Ridge Rd",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Singapore",
+      "ranking": {
+        "qs": 8,
+        "the": 19,
+        "note": "Ranked #1 in Asia"
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 92,
+        "pte": 62,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Outstanding high school results",
+        "applicationFee": {
+          "amount": 50,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "applicationDeadline": "February 28",
+        "notes": "Extremely competitive."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1500,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "accommodationMonthly": {
+          "amount": 800,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "ASEAN Undergraduate Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "Long-Term Visit Pass (LTVP) for 1 year",
+        "workHoursDuringStudy": 16
+      },
+      "courses": [
+        {
+          "name": "BComp Computer Science",
+          "level": "Undergraduate",
+          "department": "Computer Science & IT",
+          "duration": "4 years",
+          "intakes": [
+            "August"
+          ],
+          "fee": 17550,
+          "currency": "SGD",
+          "symbol": "S$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 92,
+            "minGpa": "Top 5%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nanyang Technological University (NTU)",
+      "logo": "https://www.ntu.edu.sg/logo.png",
+      "website": "https://www.ntu.edu.sg",
+      "about": "A research-intensive public university heavily focused on technology and engineering.",
+      "address": "50 Nanyang Ave",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Singapore",
+      "ranking": {
+        "qs": 26,
+        "the": 32,
+        "note": "Famous for Engineering and AI"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 90,
+        "pte": 55,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Excellent academic record",
+        "applicationFee": {
+          "amount": 50,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "applicationDeadline": "January 15",
+        "notes": "High tech and business competition."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1500,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "accommodationMonthly": {
+          "amount": 800,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Nanyang Scholarship."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1 year LTVP",
+        "workHoursDuringStudy": 16
+      },
+      "courses": [
+        {
+          "name": "MSc Artificial Intelligence",
+          "level": "Postgraduate",
+          "department": "Computer Science & IT",
+          "duration": "1 year",
+          "intakes": [
+            "August"
+          ],
+          "fee": 38000,
+          "currency": "SGD",
+          "symbol": "S$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 100,
+            "minGpa": "Second Class Honors",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Singapore Management University (SMU)",
+      "logo": "https://www.smu.edu.sg/logo.png",
+      "website": "https://www.smu.edu.sg",
+      "about": "A premier university in Asia internationally recognised for its world-class research and teaching in business.",
+      "address": "81 Victoria St",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Singapore",
+      "ranking": {
+        "qs": 511,
+        "the": null,
+        "note": "Triple Crown Business Accreditation"
+      },
+      "admissions": {
+        "ielts": 7,
+        "toefl": 93,
+        "pte": 66,
+        "gre": null,
+        "gmat": 600,
+        "minGpa": "Strong academic record",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "applicationDeadline": "March 19",
+        "notes": "Interview required for most programs."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1600,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "accommodationMonthly": {
+          "amount": 900,
+          "currency": "SGD",
+          "symbol": "S$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Global Impact Scholarship Award."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1 year LTVP",
+        "workHoursDuringStudy": 16
+      },
+      "courses": [
+        {
+          "name": "Master of Applied Finance",
+          "level": "Postgraduate",
+          "department": "Finance & Economics",
+          "duration": "1 year",
+          "intakes": [
+            "August"
+          ],
+          "fee": 42000,
+          "currency": "SGD",
+          "symbol": "S$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "Good Bachelor degree",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "James Cook University Singapore",
+      "logo": "https://www.jcu.edu.sg/logo.png",
+      "website": "https://www.jcu.edu.sg",
+      "about": "JCU Singapore is the branch campus of James Cook University Australia. It holds EduTrust Star status and awards identical Australian degrees in Business, Psychology, IT, and Environmental Science.",
+      "address": "149 Sims Drive",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Singapore",
+      "ranking": {
+        "qs": 315,
+        "the": 351,
+        "note": "Ranks reflect main campus parent institution standards."
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 79,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "3.0 out of 4.0 scale or 75% equivalent in high school",
+        "applicationFee": {
+          "amount": 260,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Tri-mester intakes: March, July, November",
+        "notes": "Trimester model allows completion of 3-year degrees in 2 calendar years."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2200,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1300,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "JCU Merit Scholarships offer 25% to 100% tuition waivers based on entrance exam scores."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months",
+        "workHoursDuringStudy": 0
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Psychological Science",
+          "level": "Undergraduate",
+          "department": "Psychology",
+          "duration": "2 years (Accelerated)",
+          "mode": "Full-time",
+          "intakes": [
+            "March",
+            "July",
+            "November"
+          ],
+          "fee": 62400,
+          "currency": "SGD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 74,
+            "minGpa": "High school completion standard",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Master of International Tourism and Hospitality Management",
+          "level": "Postgraduate",
+          "department": "Business",
+          "duration": "16 months",
+          "mode": "Full-time",
+          "intakes": [
+            "March",
+            "July",
+            "November"
+          ],
+          "fee": 40800,
+          "currency": "SGD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "Recognized bachelor degree",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "London School of Business and Finance Singapore",
+      "logo": "https://www.lsbf.edu.sg/logo.png",
+      "website": "https://www.lsbf.edu.sg",
+      "about": "LSBF Singapore is a premier private education institution providing industry-focused diplomas, professional qualifications (ACCA), and UK university pathway degrees in business, finance, and technology.",
+      "address": "GB Building, 143 Cecil Street",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Singapore",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "EduTrust certified Private Education Institution"
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 65,
+        "pte": 46,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Completion of High School Year 12 or equivalent diploma",
+        "applicationFee": {
+          "amount": 320,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling intakes throughout the year (Jan, May, Sep)",
+        "notes": "EduTrust certified institution under Singapore CPE regulations."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2000,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1100,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Merit bursaries offer SGD 2,000 to 5,000 tuition fee assistance to eligible applicants."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months (Must secure employment visa like EP/S-Pass)",
+        "workHoursDuringStudy": 0
+      },
+      "courses": [
+        {
+          "name": "Diploma in Business Studies",
+          "level": "Undergraduate",
+          "department": "School of Business",
+          "duration": "8 months",
+          "mode": "Full-time",
+          "intakes": [
+            "January",
+            "March",
+            "May",
+            "July",
+            "September",
+            "November"
+          ],
+          "fee": 9800,
+          "currency": "SGD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 5.5,
+            "toefl": 65,
+            "minGpa": "12 years of formal education",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Postgraduate Diploma in Finance",
+          "level": "Postgraduate",
+          "department": "School of Finance",
+          "duration": "12 months",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "June",
+            "October"
+          ],
+          "fee": 14500,
+          "currency": "SGD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 75,
+            "minGpa": "Recognized undergraduate degree",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "AceTek College",
+      "logo": "https://www.acetek.edu.sg/images/logo.png",
+      "website": "https://www.acetek.edu.sg",
+      "about": "AceTek College is a Singapore-based private training institution focusing on practical vocational and higher diploma credentials in IT, software development, and digital marketing.",
+      "address": "Singapore",
+      "city": "Singapore",
+      "country": "Singapore",
+      "region": "Singapore",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Private vocational institute certified by SkillsFuture/CPE; unranked."
+      },
+      "admissions": {
+        "ielts": 5,
+        "toefl": 55,
+        "pte": 40,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school pass standard",
+        "applicationFee": {
+          "amount": 200,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling admissions across 4 quarterly terms",
+        "notes": "Flexible entry routes available via internal English placement tests."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1800,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 950,
+          "currency": "SGD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": false,
+          "details": null
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months",
+        "workHoursDuringStudy": 0
+      },
+      "courses": [
+        {
+          "name": "Higher Diploma in Information Technology",
+          "level": "Undergraduate",
+          "department": "School of Technology",
+          "duration": "16 months",
+          "mode": "Full-time",
+          "intakes": [
+            "January",
+            "April",
+            "July",
+            "October"
+          ],
+          "fee": 11200,
+          "currency": "SGD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 5.5,
+            "toefl": 60,
+            "minGpa": "Completion of Senior High School",
+            "workExperience": null
+          }
+        }
+      ]
+    }
+  ],
+  "New Zealand": [
+    {
+      "name": "University of Auckland",
+      "logo": "https://www.auckland.ac.nz/logo.svg",
+      "website": "https://www.auckland.ac.nz",
+      "about": "The University of Auckland is New Zealand's largest and highest-ranked university, offering comprehensive research-led programs across eight faculties in the heart of Auckland city.",
+      "address": "22 Princes St",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": 65,
+        "the": 150,
+        "note": null
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "3.2 out of 4.0 equivalent",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "December 1 (Semester 1), July 4 (Semester 2)",
+        "notes": "Certain programs (e.g., Clinical Psychology, Engineering) have earlier capped cut-offs."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2200,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1200,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "India & International Student Excellence Scholarships value up to NZD 10,000."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "3 years",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Master of Engineering Studies",
+          "level": "Postgraduate",
+          "department": "Faculty of Engineering",
+          "duration": "1 year",
+          "mode": "Full-time",
+          "intakes": [
+            "March",
+            "July"
+          ],
+          "fee": 48600,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "4-year engineering degree",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Bachelor of Commerce",
+          "level": "Undergraduate",
+          "department": "Business School",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "March",
+            "July"
+          ],
+          "fee": 41200,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 80,
+            "minGpa": "High school qualification equivalent to NZ NCEA Level 3",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Otago",
+      "logo": "https://www.otago.ac.nz/logo.png",
+      "website": "https://www.otago.ac.nz",
+      "about": "New Zealand's oldest university, located in Dunedin, Otago is globally celebrated for medical sciences, life sciences, humanities, and an iconic residential campus culture.",
+      "address": "362 Leith Street",
+      "city": "Dunedin",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": 206,
+        "the": 301,
+        "note": null
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "3.0 out of 4.0 standard",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "December 10 (Semester 1), May 31 (Semester 2)",
+        "notes": "First Year Health Sciences (HSFY) is the competitive entry route for Medicine and Dentistry."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1600,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 800,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Vice-Chancellor's Scholarship for International Students provides NZD 10,000 toward tuition."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "3 years",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Master of Science in Biotechnology",
+          "level": "Postgraduate",
+          "department": "Sciences",
+          "duration": "1.5 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 42500,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "Bachelor of Science degree in relevant subject",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Bachelor of Health Sciences",
+          "level": "Undergraduate",
+          "department": "Health Sciences",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February"
+          ],
+          "fee": 38900,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 80,
+            "minGpa": "High school completion standard",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Massey University",
+      "logo": "https://www.massey.ac.nz/logo.svg",
+      "website": "https://www.massey.ac.nz",
+      "about": "Massey University is an innovative public university with campuses in Palmerston North, Auckland, and Wellington, famous for aviation, veterinary science, creative arts, and distance learning leadership.",
+      "address": "Tennent Drive",
+      "city": "Palmerston North",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": 239,
+        "the": 501,
+        "note": null
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 90,
+        "pte": 58,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2.8 out of 4.0 standard",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "December 1 for Semester 1, May 1 for Semester 2",
+        "notes": "Home to New Zealand's only Bachelor of Aviation and School of Veterinary Science."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1700,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 850,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Massey University High Achiever Scholarships offer up to NZD 10,000 for undergraduate studies."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "3 years",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Aviation (Air Transport Pilot)",
+          "level": "Undergraduate",
+          "department": "School of Aviation",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "January"
+          ],
+          "fee": 52000,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "High school completion + Aviation medical flight test assessment",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Master of Analytics",
+          "level": "Postgraduate",
+          "department": "Massey Business School",
+          "duration": "1 year",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 39500,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 90,
+            "minGpa": "Bachelor degree with quantitative background",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lincoln University",
+      "logo": "https://www.lincoln.ac.nz/logo.png",
+      "website": "https://www.lincoln.ac.nz",
+      "about": "A specialist land-based university near Christchurch, Lincoln focuses on agriculture, agribusiness, environmental management, forestry, and land tourism.",
+      "address": "Ellesmere Junction Road",
+      "city": "Lincoln",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": 362,
+        "the": 401,
+        "note": null
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 80,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2.7 out of 4.0 scale",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling deadlines prior to semester starts",
+        "notes": "Strong industry placement pathways in primary industries across Canterbury."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1500,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 750,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "International Taught Master's Scholarships worth NZD 7,000 to 10,000."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "3 years",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Master of Agribusiness",
+          "level": "Postgraduate",
+          "department": "Agribusiness & Commerce",
+          "duration": "1 year",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 44000,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 80,
+            "minGpa": "Bachelor degree in business or agricultural discipline",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Whitireia & WelTec",
+      "logo": "https://www.whitireiaweltec.ac.nz/logo.png",
+      "website": "https://www.whitireiaweltec.ac.nz",
+      "about": "Part of Te Pūkenga, Whitireia and WelTec form a major public polytechnic partnership offering practical, industry-integrated vocational and applied degree courses across Wellington region.",
+      "address": "Wellington, New Zealand",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Public vocational and technical institute (Te Pūkenga ecosystem)."
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school completion standard",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "February & July semester deadlines",
+        "notes": "Emphasis placed on practical skills, trade apprenticeships, and applied learning."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1800,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 900,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Regional student assistance bursaries available."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1 - 3 years (depending on level)",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Information Technology",
+          "level": "Undergraduate",
+          "department": "Information Technology",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 23500,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "Year 12 qualification pass mark",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Postgraduate Diploma in Nursing",
+          "level": "Postgraduate",
+          "department": "Health and Social Services",
+          "duration": "1 year",
+          "mode": "Full-time",
+          "intakes": [
+            "February"
+          ],
+          "fee": 27000,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 7,
+            "toefl": 94,
+            "minGpa": "Bachelor of Nursing + NZ Nursing Registration",
+            "workExperience": "2 years clinical experience"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PBRS (Professional Bar & Restaurant School)",
+      "logo": "https://www.pbrs.ac.nz/wp-content/uploads/logo.png",
+      "website": "https://www.pbrs.ac.nz",
+      "about": "PBRS is a leading specialist hospitality training provider in New Zealand, delivering hands-on diplomas in food service, culinary arts, and hotel operational management.",
+      "address": "Auckland, New Zealand",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Private Category 1 NZQA tertiary provider."
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 46,
+        "pte": 42,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "18 years old + high school completion",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling monthly intakes",
+        "notes": "Direct practical experience and portfolio interviews can fulfill prerequisites."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1900,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 950,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": false,
+          "details": null
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1 - 2 years",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Diploma in Hospitality Management (Level 6)",
+          "level": "Undergraduate",
+          "department": "Hospitality",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "May",
+            "August",
+            "October"
+          ],
+          "fee": 18500,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "High school pass standard",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Le Cordon Bleu New Zealand",
+      "logo": "https://www.cordonbleu.edu/images/logo.png",
+      "website": "https://www.cordonbleu.edu/new-zealand",
+      "about": "Situated in Wellington, Le Cordon Bleu NZ combines French culinary tradition with modern hospitality innovation, offering world-recognized culinary arts diplomas and bachelor degrees.",
+      "address": "Wellington, New Zealand",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Specialized global culinary academy brand."
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school graduation certificate",
+        "applicationFee": {
+          "amount": 250,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling admissions across 4 annual term start dates",
+        "notes": "Includes mandatory industry internships in premium culinary venues."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2000,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1050,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Culinary Arts bursary grants available valued up to NZD 5,000."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "3 years (for Bachelor degree graduates)",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Culinary Arts and Business",
+          "level": "Undergraduate",
+          "department": "Culinary Arts",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "August"
+          ],
+          "fee": 38000,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "Year 12 completion",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "UP Education",
+      "logo": "https://www.up.education/wp-content/uploads/logo.png",
+      "website": "https://www.up.education",
+      "about": "UP Education is a premier pathway and vocational education network in New Zealand, delivering foundation programs on behalf of top universities like Auckland and AUT.",
+      "address": "Auckland, New Zealand",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Pathways and foundation education specialist provider."
+      },
+      "admissions": {
+        "ielts": 5,
+        "toefl": 40,
+        "pte": 36,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Completion of Year 11 / Year 12 equivalent",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Flexible monthly intake windows",
+        "notes": "Guaranteed progression to partner universities upon achieving required score threshold."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2000,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1100,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "University Pathway Bursaries ranging from NZD 2,500 to 5,000."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months (Pathways lead to visa-eligible degree programs)",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Certificate in Foundation Studies (University of Auckland Pathway)",
+          "level": "Undergraduate",
+          "department": "Foundation Studies",
+          "duration": "1 year",
+          "mode": "Full-time",
+          "intakes": [
+            "January",
+            "April",
+            "July",
+            "October"
+          ],
+          "fee": 29500,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 5,
+            "toefl": 40,
+            "minGpa": "Year 11 high school completion standard",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "ATMC NZ",
+      "logo": "https://www.atmc.ac.nz/wp-content/uploads/logo.png",
+      "website": "https://www.atmc.ac.nz",
+      "about": "ATMC NZ is a private tertiary provider delivering industry-aligned technology, digital design, and business management diplomas tailored for global career mobility.",
+      "address": "Auckland, New Zealand",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Private NZQA-accredited institute."
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 46,
+        "pte": 42,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Completion of secondary schooling",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "Rolling bi-monthly intakes",
+        "notes": "Offers internship matching assistance upon course completion."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1900,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 950,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Special regional grants up to NZD 3,000 off tuition fees."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1 year",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Diploma in Digital Media and Design (Level 7)",
+          "level": "Undergraduate",
+          "department": "Media & Design",
+          "duration": "1 year",
+          "mode": "Full-time",
+          "intakes": [
+            "March",
+            "July",
+            "November"
+          ],
+          "fee": 16500,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "Degree or Level 6 diploma in related field",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "IPU New Zealand (Institute of Pacific United)",
+      "logo": "https://www.ipu.ac.nz/themes/ipu/images/logo.png",
+      "website": "https://www.ipu.ac.nz",
+      "about": "IPU New Zealand offers an international tertiary campus environment in Palmerston North, specializing in international business, environmental studies, and language studies.",
+      "address": "Palmerston North, New Zealand",
+      "city": "Palmerston North",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Specialized private international institute; NZQA Category 1."
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "2.5 out of 4.0 or equivalent secondary transcript",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "April, August, January intakes",
+        "notes": "Residential campus offering full-board student dormitories."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1400,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 700,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "IPU NZ International Student Scholarships cover up to NZD 7,000 per year."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "2 - 3 years",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Contemporary International Studies",
+          "level": "Undergraduate",
+          "department": "International Studies",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "April",
+            "August"
+          ],
+          "fee": 21000,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "High school graduation certificate",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Master of International Studies",
+          "level": "Postgraduate",
+          "department": "Postgraduate Studies",
+          "duration": "1.5 years",
+          "mode": "Full-time",
+          "intakes": [
+            "April",
+            "August"
+          ],
+          "fee": 28500,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 79,
+            "minGpa": "Bachelor degree in any field",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Whitecliffe College",
+      "logo": "https://www.whitecliffe.ac.nz/assets/images/logo.png",
+      "website": "https://www.whitecliffe.ac.nz",
+      "about": "Whitecliffe College is an award-winning private institution specializing in fine arts, design, fashion, digital technology, and creative arts therapy across campuses in Auckland and Wellington.",
+      "address": "Auckland, New Zealand",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Private arts and technology college; NZQA Category 1."
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Portfolio evaluation + High school diploma",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "November 30 for February start",
+        "notes": "Portfolio of creative works is the essential entry criterion for design tracks."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 2100,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 1100,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Creative Excellence grants valued up to NZD 4,000 available upon portfolio review."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "3 years (for Bachelor level)",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Fine Arts",
+          "level": "Undergraduate",
+          "department": "Fine Arts",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February"
+          ],
+          "fee": 27000,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "High school diploma + Creative portfolio",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "NorthTec",
+      "logo": "https://www.northtec.ac.nz/assets/images/logo.png",
+      "website": "https://www.northtec.ac.nz",
+      "about": "NorthTec is Northland's primary regional tertiary provider (Te Pūkenga), offering practical career qualifications in nursing, trades, environmental management, and digital technologies in Whangārei.",
+      "address": "Whangarei, New Zealand",
+      "city": "Whangarei",
+      "country": "New Zealand",
+      "region": "New Zealand",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Public vocational polytechnic institute."
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school completion standard",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "applicationDeadline": "February & July semester starts",
+        "notes": "Affordable regional living combined with hands-on practical training environments."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 1400,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "accommodationMonthly": {
+          "amount": 700,
+          "currency": "NZD",
+          "symbol": "$"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Regional study grants up to NZD 2,500 available."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1 - 3 years (depending on level)",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Applied Management",
+          "level": "Undergraduate",
+          "department": "Business & Management",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 21000,
+          "currency": "NZD",
+          "symbol": "$",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 60,
+            "minGpa": "Secondary school qualification pass",
+            "workExperience": null
+          }
+        }
+      ]
+    }
+  ],
+  "Mauritius": [
+    {
+      "name": "Escoffier Luxury Institute",
+      "logo": "https://www.escoffier.edu/logo.png",
+      "website": "https://www.escoffier.edu",
+      "about": "Escoffier Luxury Institute in Mauritius offers world-class French culinary arts and luxury hospitality management education, combining French heritage training with Mauritius' booming international tourism hub.",
+      "address": "Ebene, Mauritius",
+      "city": "Ebene",
+      "country": "Mauritius",
+      "region": "Mauritius",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Global culinary recognition"
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 55,
+        "pte": 46,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High School certificate completion",
+        "applicationFee": {
+          "amount": 2500,
+          "currency": "MUR",
+          "symbol": "Rs"
+        },
+        "applicationDeadline": "Rolling admissions, October and February intakes",
+        "notes": "Includes practical work placements across 5-star international resort hotels."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 22000,
+          "currency": "MUR",
+          "symbol": "Rs"
+        },
+        "accommodationMonthly": {
+          "amount": 12000,
+          "currency": "MUR",
+          "symbol": "Rs"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Early-bird enrollment bursaries offer up to 15% fee reductions."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1 year (Young Professional Visa extension)",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Diploma in Culinary Arts & Luxury Operations",
+          "level": "Undergraduate",
+          "department": "Culinary & Hospitality",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "October",
+            "February"
+          ],
+          "fee": 280000,
+          "currency": "MUR",
+          "symbol": "Rs",
+          "requirements": {
+            "ielts": 5.5,
+            "toefl": 55,
+            "minGpa": "High school completion standard",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Mauritius",
+      "logo": "https://www.uom.ac.mu/logo.png",
+      "website": "https://www.uom.ac.mu",
+      "about": "The oldest and premier public university in Mauritius, offering a wide array of accredited degrees.",
+      "address": "Reduit",
+      "city": "Moka",
+      "country": "Mauritius",
+      "region": "Mauritius",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Top national university"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 80,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "A-Level pass or equivalent",
+        "applicationFee": {
+          "amount": 1500,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "applicationDeadline": "April",
+        "notes": "Highly affordable for African and Asian students."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 20000,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "accommodationMonthly": {
+          "amount": 10000,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Mauritius-Africa Scholarship Scheme."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "Work permits required for graduates",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "BSc Computer Science",
+          "level": "Undergraduate",
+          "department": "Computer Science & IT",
+          "duration": "3 years",
+          "intakes": [
+            "August"
+          ],
+          "fee": 150000,
+          "currency": "MUR",
+          "symbol": "₨",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 80,
+            "minGpa": "A-Level pass",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Middlesex University Mauritius",
+      "logo": "https://www.middlesex.mu/logo.svg",
+      "website": "https://www.middlesex.mu",
+      "about": "The Mauritian branch campus of the UK's Middlesex University, providing identical British degrees in a tropical setting.",
+      "address": "Uniciti Education Hub",
+      "city": "Flic en Flac",
+      "country": "Mauritius",
+      "region": "Mauritius",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "UK Degree awarded"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 72,
+        "pte": 51,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "BBC at A-Level",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Extremely popular for IT and Business."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 25000,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "accommodationMonthly": {
+          "amount": 12000,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Regional and academic merit scholarships up to 15%."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-year Young Professional Occupation Permit",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "BSc Cyber Security",
+          "level": "Undergraduate",
+          "department": "Computer Science & IT",
+          "duration": "3 years",
+          "intakes": [
+            "September",
+            "January"
+          ],
+          "fee": 275000,
+          "currency": "MUR",
+          "symbol": "₨",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 72,
+            "minGpa": "Pass",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Curtin Mauritius",
+      "logo": "https://curtinmauritius.ac.mu/logo.png",
+      "website": "https://curtinmauritius.ac.mu",
+      "about": "Offers a global Australian education experience with strong ties to the Indian Ocean tech economy.",
+      "address": "Telfair",
+      "city": "Moka",
+      "country": "Mauritius",
+      "region": "Mauritius",
+      "ranking": {
+        "qs": 183,
+        "the": 201,
+        "note": "Australian Degree"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 79,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Varies",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Operates on Australian semester dates."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 25000,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "accommodationMonthly": {
+          "amount": 12000,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Alumni and merit discounts."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-year YPOP",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Commerce",
+          "level": "Undergraduate",
+          "department": "Business & Management",
+          "duration": "3 years",
+          "intakes": [
+            "February",
+            "July"
+          ],
+          "fee": 260000,
+          "currency": "MUR",
+          "symbol": "₨",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 79,
+            "minGpa": "Pass",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Aberystwyth University - Mauritius Branch Campus",
+      "logo": "https://www.aber.ac.uk/logo.png",
+      "website": "https://www.aber.ac.uk",
+      "about": "Delivering traditional UK academic excellence with a focus on law, business, and technology.",
+      "address": "Ebene Cybercity",
+      "city": "Ebene",
+      "country": "Mauritius",
+      "region": "Mauritius",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "UK Degree"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Pass",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "A great hub for networking."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 23000,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "accommodationMonthly": {
+          "amount": 11000,
+          "currency": "MUR",
+          "symbol": "₨"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "International Excellence Bursary."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-year YPOP",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "LLB Law",
+          "level": "Undergraduate",
+          "department": "Law",
+          "duration": "3 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 290000,
+          "currency": "MUR",
+          "symbol": "₨",
+          "requirements": {
+            "ielts": 6,
+            "toefl": null,
+            "minGpa": "Good high school grades",
+            "workExperience": null
+          }
+        }
+      ]
+    }
+  ],
+  "Dubai": [
+    {
+      "name": "American University in the Emirates",
+      "logo": "https://aue.ae/logo.svg",
+      "website": "https://aue.ae",
+      "about": "Situated in Dubai International Academic City, AUE delivers American-style liberal arts higher education across media, design, law, business, and computer technology.",
+      "address": "Dubai, United Arab Emirates",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": 601,
+        "the": null,
+        "note": "Ranked in QS Arab Region University Rankings."
+      },
+      "admissions": {
+        "ielts": 5,
+        "toefl": 61,
+        "pte": 44,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "60% aggregate in High School Certificate (EmSAT standards apply)",
+        "applicationFee": {
+          "amount": 1050,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "applicationDeadline": "Rolling admissions up to start of semester",
+        "notes": "UAE Ministry of Education accreditation requires EmSAT English/Math equivalencies."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 4200,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "accommodationMonthly": {
+          "amount": 2300,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Sports and Academic Excellence Grants offer up to 50% tuition reduction."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months (Visa converted upon corporate sponsorship)",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Science in Computer Science",
+          "level": "Undergraduate",
+          "department": "Computer Information Technology",
+          "duration": "4 years",
+          "mode": "Full-time",
+          "intakes": [
+            "September",
+            "January"
+          ],
+          "fee": 52000,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 5,
+            "toefl": 61,
+            "minGpa": "60% secondary score",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Master of Business Administration",
+          "level": "Postgraduate",
+          "department": "College of Business Administration",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "September",
+            "January"
+          ],
+          "fee": 68000,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 79,
+            "minGpa": "3.0 GPA in Bachelor degree",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "SAE Institute Dubai",
+      "logo": "https://dubai.sae.edu/logo.png",
+      "website": "https://dubai.sae.edu",
+      "about": "SAE Institute Dubai is a leading creative media educator offering hands-on Australian-accredited degrees and diplomas in Audio Production, Film, Animation, Game Development, and Design.",
+      "address": "Dubai, United Arab Emirates",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Specialized global media technology institute."
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 70,
+        "pte": 50,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school graduation certificate",
+        "applicationFee": {
+          "amount": 500,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "applicationDeadline": "September and January intake deadlines",
+        "notes": "Portfolio review or interview required for creative pathway tracks."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 4000,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "accommodationMonthly": {
+          "amount": 2200,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Creative Talent Scholarships offer up to 25% tuition fee reduction."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "Bachelor of Film Production",
+          "level": "Undergraduate",
+          "department": "Film",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "September",
+            "January"
+          ],
+          "fee": 54000,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 70,
+            "minGpa": "High school completion standard",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Brookstone College",
+      "logo": "https://brookstone.edu/logo.png",
+      "website": "https://brookstone.edu",
+      "about": "Brookstone College Dubai is a private higher education institute delivering flexible diploma and pathway options in business, healthcare management, and information technology in Knowledge Park.",
+      "address": "Dubai, United Arab Emirates",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Private higher education college; unranked."
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 60,
+        "pte": 46,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school completion certificate",
+        "applicationFee": {
+          "amount": 300,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "applicationDeadline": "Rolling monthly intakes",
+        "notes": "Offers pathway transfers to UK and European partner universities."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 3500,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "accommodationMonthly": {
+          "amount": 1800,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Bursaries up to AED 5,000 available for early registrants."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "Higher National Diploma in Business",
+          "level": "Undergraduate",
+          "department": "Business Studies",
+          "duration": "2 years",
+          "mode": "Full-time",
+          "intakes": [
+            "January",
+            "May",
+            "September"
+          ],
+          "fee": 28000,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 5.5,
+            "toefl": 60,
+            "minGpa": "Secondary school certificate pass",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Britts Imperial University College",
+      "logo": "https://brittsimperial.com/logo.png",
+      "website": "https://brittsimperial.com",
+      "about": "Britts Imperial University College delivers globally accredited UK and European degree programs in Dubai, offering degrees in business analytics, computer science, and healthcare management.",
+      "address": "Sharjah, United Arab Emirates",
+      "city": "Sharjah",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Partnership institution awarding degrees from European and British partner universities."
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 60,
+        "pte": 46,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school graduation diploma",
+        "applicationFee": {
+          "amount": 500,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "applicationDeadline": "Rolling seasonal intakes (Jan, May, Sep)",
+        "notes": "Flexible installment options for international tuition payments."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 3200,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "accommodationMonthly": {
+          "amount": 1600,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Imperial Excellence Scholarships offer up to 30% fee waivers."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "BBA in International Business",
+          "level": "Undergraduate",
+          "department": "School of Business",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "January",
+            "May",
+            "September"
+          ],
+          "fee": 32000,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 5.5,
+            "toefl": 60,
+            "minGpa": "12th standard pass mark",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "MBA in Global Health Management",
+          "level": "Postgraduate",
+          "department": "School of Management",
+          "duration": "1 year",
+          "mode": "Full-time",
+          "intakes": [
+            "January",
+            "May",
+            "September"
+          ],
+          "fee": 42000,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 70,
+            "minGpa": "Recognized undergraduate degree",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Emirates Aviation University",
+      "logo": "https://www.eau.ac.ae/logo.png",
+      "website": "https://www.eau.ac.ae",
+      "about": "Emirates Aviation University is the education arm of the Emirates Group, offering specialized undergraduate and postgraduate degrees in aeronautical engineering, aviation management, logistics, and pilot training.",
+      "address": "Dubai, United Arab Emirates",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Accredited by UAE Ministry of Education (CAA) and UK QAA."
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 71,
+        "pte": 54,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "70% aggregate in High School for UG / 2.8 GPA for PG",
+        "applicationFee": {
+          "amount": 525,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "applicationDeadline": "August 15 (Fall Intake), December 15 (Spring Intake)",
+        "notes": "Direct internship placement access within the Emirates Airlines corporate network."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 4500,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "accommodationMonthly": {
+          "amount": 2500,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Academic Merit Scholarships offer up to 20% discount on annual tuition fees."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1 - 5 years (subject to UAE Golden Visa or sponsored work visa)",
+        "workHoursDuringStudy": 20
+      },
+      "courses": [
+        {
+          "name": "BSc in Aeronautical Engineering",
+          "level": "Undergraduate",
+          "department": "Engineering",
+          "duration": "4 years",
+          "mode": "Full-time",
+          "intakes": [
+            "September",
+            "January"
+          ],
+          "fee": 58000,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 71,
+            "minGpa": "75% in High School with strong Physics and Mathematics background",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "MBA in Aviation Management",
+          "level": "Postgraduate",
+          "department": "Business School",
+          "duration": "1.5 years",
+          "mode": "Full-time",
+          "intakes": [
+            "September",
+            "January"
+          ],
+          "fee": 79500,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 71,
+            "minGpa": "Bachelor degree with 3.0 out of 4.0 scale",
+            "workExperience": "2 years industry experience preferred"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Heriot-Watt University Dubai",
+      "logo": "https://www.hw.ac.uk/dubai/logo.png",
+      "website": "https://www.hw.ac.uk/dubai",
+      "about": "A prestigious UK university campus offering a diverse range of engineering, business, and tech degrees.",
+      "address": "Dubai Knowledge Park",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": 235,
+        "the": 351,
+        "note": "UK Degree"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 78,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "BBB at A-Level",
+        "applicationFee": {
+          "amount": 300,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "applicationDeadline": "August",
+        "notes": "Excellent state-of-the-art campus."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 4500,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "accommodationMonthly": {
+          "amount": 3000,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Vice-Chancellor's Excellence Award."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-3 years",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "BEng Mechanical Engineering",
+          "level": "Undergraduate",
+          "department": "Engineering",
+          "duration": "4 years",
+          "intakes": [
+            "September",
+            "January"
+          ],
+          "fee": 70000,
+          "currency": "AED",
+          "symbol": "د.إ",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 78,
+            "minGpa": "Pass",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Middlesex University Dubai",
+      "logo": "https://www.mdx.ac.ae/logo.png",
+      "website": "https://www.mdx.ac.ae",
+      "about": "One of the most popular UK branch campuses in the UAE, famous for law and business.",
+      "address": "Dubai Knowledge Park",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "5-Star KHDA Rating"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 72,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "Pass",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Extremely supportive of South Asian applicants."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 4000,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "accommodationMonthly": {
+          "amount": 2500,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Academic Excellence Grants."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-3 years",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "LLB Law",
+          "level": "Undergraduate",
+          "department": "Law",
+          "duration": "3 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 58000,
+          "currency": "AED",
+          "symbol": "د.إ",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 72,
+            "minGpa": "Pass",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "BITS Pilani Dubai",
+      "logo": "https://www.bits-pilani.ac.in/dubai/logo.png",
+      "website": "https://www.bits-pilani.ac.in/dubai",
+      "about": "The premier Indian engineering institute operating an elite tech-focused campus in Dubai.",
+      "address": "Dubai International Academic City",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Elite Indian Engineering degree"
+      },
+      "admissions": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "60% in Science stream",
+        "applicationFee": {
+          "amount": 220,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "applicationDeadline": "June",
+        "notes": "No IELTS required for CBSE/ICSE students."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 3500,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "accommodationMonthly": {
+          "amount": 2000,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Board Topper scholarships up to 100%."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-3 years",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "BE Computer Science",
+          "level": "Undergraduate",
+          "department": "Computer Science & IT",
+          "duration": "4 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 48000,
+          "currency": "AED",
+          "symbol": "د.إ",
+          "requirements": {
+            "ielts": null,
+            "toefl": null,
+            "minGpa": "60%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Manipal Academy of Higher Education Dubai",
+      "logo": "https://www.manipaldubai.com/logo.png",
+      "website": "https://www.manipaldubai.com",
+      "about": "A multidisciplinary university offering diverse courses from engineering to interior design.",
+      "address": "Dubai International Academic City",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Indian Degree"
+      },
+      "admissions": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "50% minimum",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "applicationDeadline": "Rolling",
+        "notes": "Very active campus life."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 3500,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "accommodationMonthly": {
+          "amount": 2000,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Merit and sports scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-3 years",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "BArch Architecture",
+          "level": "Undergraduate",
+          "department": "Creative Arts & Design",
+          "duration": "5 years",
+          "intakes": [
+            "September"
+          ],
+          "fee": 42000,
+          "currency": "AED",
+          "symbol": "د.إ",
+          "requirements": {
+            "ielts": null,
+            "toefl": null,
+            "minGpa": "50%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "University of Wollongong in Dubai (UOWD)",
+      "logo": "https://www.uowdubai.ac.ae/logo.svg",
+      "website": "https://www.uowdubai.ac.ae",
+      "about": "The oldest and most prestigious foreign university in the UAE, providing world-class Australian education.",
+      "address": "Dubai Knowledge Park",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": 162,
+        "the": 201,
+        "note": "Australian Degree"
+      },
+      "admissions": {
+        "ielts": 6,
+        "toefl": 79,
+        "pte": null,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "65%",
+        "applicationFee": {
+          "amount": 0,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "applicationDeadline": "August",
+        "notes": "Highly recognized by local employers."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 4000,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "accommodationMonthly": {
+          "amount": 2500,
+          "currency": "AED",
+          "symbol": "د.إ"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Outstanding Academic Excellence Scholarships."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": true,
+        "postStudyWorkDuration": "1-3 years",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "Master of Engineering Management",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "1.5 years",
+          "intakes": [
+            "September",
+            "February"
+          ],
+          "fee": 65000,
+          "currency": "AED",
+          "symbol": "د.إ",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 79,
+            "minGpa": "65%",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "SKEMA Business School Dubai",
+      "logo": "https://www.skema.edu/assets/images/logo.png",
+      "website": "https://www.skema.edu/campuses/dubai",
+      "about": "SKEMA Business School is a top-tier French Grande École with a vibrant campus in Dubai's DIFC, specializing in international business, luxury management, and financial technology.",
+      "address": "Dubai, United Arab Emirates",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": 23,
+        "the": null,
+        "note": "Ranked top 25 globally for Masters in Management by Financial Times / QS."
+      },
+      "admissions": {
+        "ielts": 6.5,
+        "toefl": 85,
+        "pte": 60,
+        "gre": null,
+        "gmat": 600,
+        "minGpa": "3.0 out of 4.0 scale",
+        "applicationFee": {
+          "amount": 100,
+          "currency": "EUR",
+          "symbol": "€"
+        },
+        "applicationDeadline": "Rolling rounds ending June 30 for Fall intake",
+        "notes": "Triple Crown accredited business school (AACSB, EQUIS, AMBA)."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 4500,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "accommodationMonthly": {
+          "amount": 2500,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "SKEMA Excellence Scholarships provide up to EUR 5,000 tuition reduction."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "MSc in International Business",
+          "level": "Postgraduate",
+          "department": "Business & Management",
+          "duration": "1 year",
+          "mode": "Full-time",
+          "intakes": [
+            "September"
+          ],
+          "fee": 18000,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6.5,
+            "toefl": 85,
+            "minGpa": "Bachelor degree in business or equivalent",
+            "workExperience": null
+          }
+        },
+        {
+          "name": "Global BBA",
+          "level": "Undergraduate",
+          "department": "Undergraduate Programs",
+          "duration": "4 years",
+          "mode": "Full-time",
+          "intakes": [
+            "September"
+          ],
+          "fee": 14000,
+          "currency": "EUR",
+          "symbol": "€",
+          "requirements": {
+            "ielts": 6,
+            "toefl": 80,
+            "minGpa": "High school diploma standard",
+            "workExperience": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Success Point College",
+      "logo": "https://successpoint.ae/wp-content/uploads/logo.png",
+      "website": "https://successpoint.ae",
+      "about": "Success Point College is an accredited higher education provider operating in Dubai and Sharjah, partnering with UK universities to offer UK-accredited diplomas and degrees.",
+      "address": "Sharjah, United Arab Emirates",
+      "city": "Sharjah",
+      "country": "United Arab Emirates",
+      "region": "Dubai",
+      "ranking": {
+        "qs": null,
+        "the": null,
+        "note": "Private higher education college delivering foreign degree pathways."
+      },
+      "admissions": {
+        "ielts": 5.5,
+        "toefl": 55,
+        "pte": 42,
+        "gre": null,
+        "gmat": null,
+        "minGpa": "High school completion pass",
+        "applicationFee": {
+          "amount": 300,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "applicationDeadline": "Rolling intakes (Jan, May, Sep)",
+        "notes": "Flexible weekend and evening class structures available for working professionals."
+      },
+      "costs": {
+        "livingCostMonthly": {
+          "amount": 3000,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "accommodationMonthly": {
+          "amount": 1500,
+          "currency": "AED",
+          "symbol": "AED"
+        },
+        "scholarships": {
+          "available": true,
+          "details": "Merit bursaries offer up to 20% tuition discounts."
+        }
+      },
+      "visa": {
+        "postStudyWorkVisa": false,
+        "postStudyWorkDuration": "0 months",
+        "workHoursDuringStudy": 15
+      },
+      "courses": [
+        {
+          "name": "BSc (Hons) in Computing",
+          "level": "Undergraduate",
+          "department": "School of Computing",
+          "duration": "3 years",
+          "mode": "Full-time",
+          "intakes": [
+            "January",
+            "May",
+            "September"
+          ],
+          "fee": 26000,
+          "currency": "AED",
+          "symbol": "AED",
+          "requirements": {
+            "ielts": 5.5,
+            "toefl": 55,
+            "minGpa": "High school completion diploma",
+            "workExperience": null
+          }
+        }
+      ]
+    }
+  ]
+}

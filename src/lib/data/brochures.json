@@ -1,0 +1,52 @@
+[
+  {
+    "country": "UK",
+    "flag": "🇬🇧",
+    "description": "Explore world-class universities across the United Kingdom, from Oxford and Cambridge to modern metropolitan institutions.",
+    "filename": "uk-brochure.pdf",
+    "universityCount": 12
+  },
+  {
+    "country": "Europe",
+    "flag": "🇪🇺",
+    "description": "Discover top universities in Germany, Netherlands, Malta, Cyprus and Latvia with affordable or tuition-free education.",
+    "region": "Germany, Netherlands, Malta, Cyprus & Latvia",
+    "filename": "europe-brochure.pdf",
+    "universityCount": 15
+  },
+  {
+    "country": "Australia",
+    "flag": "🇦🇺",
+    "description": "Study at world-ranked Australian universities with post-study work opportunities and a vibrant campus life.",
+    "filename": "australia-brochure.pdf",
+    "universityCount": 10
+  },
+  {
+    "country": "Singapore",
+    "flag": "🇸🇬",
+    "description": "Access cutting-edge education in Asia's top education hub with global career prospects.",
+    "filename": "singapore-brochure.pdf",
+    "universityCount": 6
+  },
+  {
+    "country": "New Zealand",
+    "flag": "🇳🇿",
+    "description": "Experience quality education in a safe, scenic environment with globally recognized qualifications.",
+    "filename": "new-zealand-brochure.pdf",
+    "universityCount": 8
+  },
+  {
+    "country": "Mauritius",
+    "flag": "🇲🇺",
+    "description": "Pursue affordable international education in a tropical island setting with English-taught programs.",
+    "filename": "mauritius-brochure.pdf",
+    "universityCount": 5
+  },
+  {
+    "country": "Dubai",
+    "flag": "🇦🇪",
+    "description": "Get a global degree in Dubai's free zones with world-class campuses and tax-free career opportunities.",
+    "filename": "dubai-brochure.pdf",
+    "universityCount": 7
+  }
+]
