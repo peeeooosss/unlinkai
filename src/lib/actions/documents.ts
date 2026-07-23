@@ -6,12 +6,11 @@ import { eq, desc, count } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
 export async function getDocumentsByStudent(studentId: string) {
-  return db
+  return await db
     .select()
     .from(documents)
     .where(eq(documents.studentId, studentId))
-    .orderBy(desc(documents.uploadedAt))
-    .all();
+    .orderBy(desc(documents.uploadedAt));
 }
 
 export async function addDocument(data: {
@@ -23,7 +22,7 @@ export async function addDocument(data: {
   const id = `doc-${Date.now()}`;
   const now = new Date().toISOString().split("T")[0];
 
-  db.insert(documents)
+  await db.insert(documents)
     .values({
       id,
       studentId: data.studentId,
@@ -32,28 +31,25 @@ export async function addDocument(data: {
       fileName: data.fileName,
       uploadedAt: now,
       verified: false,
-    })
-    .run();
+    });
 
   revalidatePath("/agent-portal");
   return id;
 }
 
 export async function verifyDocument(documentId: string) {
-  db.update(documents)
+  await db.update(documents)
     .set({ verified: true })
-    .where(eq(documents.id, documentId))
-    .run();
+    .where(eq(documents.id, documentId));
 
   revalidatePath("/agent-portal");
   return { success: true };
 }
 
 export async function getVerifiedDocCount(studentId: string) {
-  const result = db
+  const result = await db
     .select({ count: count() })
     .from(documents)
-    .where(eq(documents.studentId, studentId))
-    .get();
-  return result?.count ?? 0;
+    .where(eq(documents.studentId, studentId));
+  return result[0]?.count ?? 0;
 }

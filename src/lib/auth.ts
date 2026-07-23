@@ -26,11 +26,11 @@ export const authOptions: NextAuthOptions = {
           throw new Error("Email and password are required");
         }
 
-        const user = db
+        const result = await db
           .select()
           .from(users)
-          .where(eq(users.email, credentials.email))
-          .get();
+          .where(eq(users.email, credentials.email));
+        const user = result[0];
 
         if (!user || !user.password) {
           throw new Error("No account found with this email");
@@ -62,11 +62,11 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
-        const dbUser = db
+        const dbUserResult = await db
           .select()
           .from(users)
-          .where(eq(users.id, user.id))
-          .get();
+          .where(eq(users.id, user.id));
+        const dbUser = dbUserResult[0];
         if (dbUser) {
           token.role = dbUser.role;
         }

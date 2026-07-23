@@ -6,16 +6,16 @@ import { eq, desc, count, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
 export async function getApplications() {
-  return db.select().from(applications).orderBy(desc(applications.updatedAt)).all();
+  return await db.select().from(applications).orderBy(desc(applications.updatedAt));
 }
 
 export async function getApplicationCounts() {
-  const total = db.select({ count: count() }).from(applications).get()?.count ?? 0;
-  const byStage = db
+  const totalResult = await db.select({ count: count() }).from(applications);
+  const total = totalResult[0]?.count ?? 0;
+  const byStage = await db
     .select({ stage: applications.stage, count: count() })
     .from(applications)
-    .groupBy(applications.stage)
-    .all();
+    .groupBy(applications.stage);
   return { total, byStage };
 }
 
@@ -26,17 +26,17 @@ export async function updateApplicationStage(
 ) {
   const now = new Date().toISOString().split("T")[0];
 
-  const app = db.select().from(applications).where(eq(applications.id, applicationId)).get();
+  const appResult = await db.select().from(applications).where(eq(applications.id, applicationId));
+  const app = appResult[0];
   if (!app) throw new Error("Application not found");
 
   const oldStage = app.stage as Stage;
 
-  db.update(applications)
+  await db.update(applications)
     .set({ stage: newStage, updatedAt: now })
-    .where(eq(applications.id, applicationId))
-    .run();
+    .where(eq(applications.id, applicationId));
 
-  db.insert(activityLogs)
+  await db.insert(activityLogs)
     .values({
       id: `act-${Date.now()}`,
       studentId: app.studentId,
@@ -45,8 +45,7 @@ export async function updateApplicationStage(
       note: `Moved from ${oldStage.replace(/_/g, " ")} to ${newStage.replace(/_/g, " ")}`,
       performedBy,
       createdAt: now,
-    })
-    .run();
+    });
 
   revalidatePath("/agent-portal");
   revalidatePath("/agent-portal/applications");
@@ -63,7 +62,7 @@ export async function createApplication(data: {
   const id = `app-${Date.now()}`;
   const now = new Date().toISOString().split("T")[0];
 
-  db.insert(applications)
+  await db.insert(applications)
     .values({
       id,
       studentId: data.studentId,
@@ -75,8 +74,7 @@ export async function createApplication(data: {
       insurance: data.insurance || null,
       submittedAt: now,
       updatedAt: now,
-    })
-    .run();
+    });
 
   revalidatePath("/agent-portal");
   revalidatePath("/agent-portal/applications");
@@ -90,7 +88,8 @@ export async function updateApplication(
 ) {
   const now = new Date().toISOString().split("T")[0];
 
-  const app = db.select().from(applications).where(eq(applications.id, applicationId)).get();
+  const appResult = await db.select().from(applications).where(eq(applications.id, applicationId));
+  const app = appResult[0];
   if (!app) throw new Error("Application not found");
 
   const updates: Record<string, string> = { updatedAt: now };
@@ -100,10 +99,9 @@ export async function updateApplication(
   if (data.accommodation !== undefined) updates.accommodation = data.accommodation;
   if (data.insurance !== undefined) updates.insurance = data.insurance;
 
-  db.update(applications)
+  await db.update(applications)
     .set(updates)
-    .where(eq(applications.id, applicationId))
-    .run();
+    .where(eq(applications.id, applicationId));
 
   const changes = [];
   if (data.university && data.university !== app.university) changes.push(`university to ${data.university}`);
@@ -113,7 +111,7 @@ export async function updateApplication(
   if (data.insurance !== undefined && data.insurance !== app.insurance) changes.push(`insurance to ${data.insurance}`);
 
   if (changes.length > 0) {
-    db.insert(activityLogs)
+    await db.insert(activityLogs)
       .values({
         id: `act-${Date.now()}`,
         studentId: app.studentId,
@@ -122,8 +120,7 @@ export async function updateApplication(
         note: `Updated: ${changes.join(", ")}`,
         performedBy,
         createdAt: now,
-      })
-      .run();
+      });
   }
 
   revalidatePath("/agent-portal");
@@ -140,7 +137,7 @@ export async function addActivityNote(
 ) {
   const now = new Date().toISOString().split("T")[0];
 
-  db.insert(activityLogs)
+  await db.insert(activityLogs)
     .values({
       id: `act-${Date.now()}`,
       studentId,
@@ -149,8 +146,7 @@ export async function addActivityNote(
       note,
       performedBy,
       createdAt: now,
-    })
-    .run();
+    });
 
   revalidatePath("/agent-portal");
   return { success: true };
@@ -158,10 +154,9 @@ export async function addActivityNote(
 
 export async function getPendingActionCount() {
   const now = new Date().toISOString().split("T")[0];
-  const result = db
+  const result = await db
     .select({ count: count() })
     .from(applications)
-    .where(sql`${applications.stage} != 'visa_approved' AND ${applications.stage} != 'visa_processing'`)
-    .get();
-  return result?.count ?? 0;
+    .where(sql`${applications.stage} != 'visa_approved' AND ${applications.stage} != 'visa_processing'`);
+  return result[0]?.count ?? 0;
 }

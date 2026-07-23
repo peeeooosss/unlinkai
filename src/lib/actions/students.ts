@@ -7,60 +7,58 @@ import { revalidatePath } from "next/cache";
 
 export async function getStudents(search?: string, status?: string) {
   if (search && status) {
-    return db
+    return await db
       .select()
       .from(students)
       .where(and(like(students.name, `%${search}%`), eq(students.status, status)))
       .orderBy(desc(students.createdAt));
   }
   if (search) {
-    return db
+    return await db
       .select()
       .from(students)
       .where(like(students.name, `%${search}%`))
       .orderBy(desc(students.createdAt));
   }
   if (status) {
-    return db
+    return await db
       .select()
       .from(students)
       .where(eq(students.status, status))
       .orderBy(desc(students.createdAt));
   }
-  return db.select().from(students).orderBy(desc(students.createdAt));
+  return await db.select().from(students).orderBy(desc(students.createdAt));
 }
 
 export async function getStudentById(id: string) {
-  const student = db.select().from(students).where(eq(students.id, id)).get();
+  const studentResult = await db.select().from(students).where(eq(students.id, id));
+  const student = studentResult[0];
   if (!student) return null;
 
-  const studentApplications = db
+  const studentApplications = await db
     .select()
     .from(applications)
     .where(eq(applications.studentId, id))
-    .orderBy(desc(applications.updatedAt))
-    .all();
+    .orderBy(desc(applications.updatedAt));
 
-  const studentDocuments = db
+  const studentDocuments = await db
     .select()
     .from(documents)
     .where(eq(documents.studentId, id))
-    .orderBy(desc(documents.uploadedAt))
-    .all();
+    .orderBy(desc(documents.uploadedAt));
 
-  const studentActivities = db
+  const studentActivities = await db
     .select()
     .from(activityLogs)
     .where(eq(activityLogs.studentId, id))
-    .orderBy(desc(activityLogs.createdAt))
-    .all();
+    .orderBy(desc(activityLogs.createdAt));
 
   return { ...student, applications: studentApplications, documents: studentDocuments, activities: studentActivities };
 }
 
 export async function getStudentCount() {
-  const result = db.select({ count: count() }).from(students).get();
-  return result?.count ?? 0;
+  const result = await db.select({ count: count() }).from(students);
+  return result[0]?.count ?? 0;
 }
 
 export async function createStudent(data: {
@@ -106,7 +104,7 @@ export async function createStudent(data: {
   const id = `stu-${Date.now()}`;
   const now = new Date().toISOString().split("T")[0];
 
-  db.insert(students)
+  await db.insert(students)
     .values({
       id,
       name: data.name,
@@ -148,8 +146,7 @@ export async function createStudent(data: {
       postStudyWorkInterest: data.postStudyWorkInterest || null,
       consentGiven: data.consentGiven || null,
       status: data.status || "complete",
-    })
-    .run();
+    });
 
   revalidatePath("/agent-portal");
   revalidatePath("/agent-portal/students");
@@ -201,7 +198,8 @@ export async function updateStudent(
   performedBy: string = "Sarah Mitchell"
 ) {
   const now = new Date().toISOString().split("T")[0];
-  const existing = db.select().from(students).where(eq(students.id, studentId)).get();
+  const existingResult = await db.select().from(students).where(eq(students.id, studentId));
+  const existing = existingResult[0];
   if (!existing) throw new Error("Student not found");
 
   const updates: Record<string, string> = {};
@@ -259,13 +257,12 @@ export async function updateStudent(
 
   if (Object.keys(updates).length === 0) return { success: true, changes: [] };
 
-  db.update(students)
+  await db.update(students)
     .set(updates)
-    .where(eq(students.id, studentId))
-    .run();
+    .where(eq(students.id, studentId));
 
   if (changes.length > 0) {
-    db.insert(activityLogs)
+    await db.insert(activityLogs)
       .values({
         id: `act-${Date.now()}`,
         studentId,
@@ -274,8 +271,7 @@ export async function updateStudent(
         note: `Updated: ${changes.join(", ")}`,
         performedBy,
         createdAt: now,
-      })
-      .run();
+      });
   }
 
   revalidatePath("/agent-portal");

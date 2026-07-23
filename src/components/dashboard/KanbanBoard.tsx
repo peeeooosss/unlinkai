@@ -190,7 +190,7 @@ export function KanbanBoard() {
         university: app.university,
         course: app.course,
         priority: "medium" as const,
-        documents: docs.map((d) => ({ id: d.id, type: d.type, fileName: d.fileName, verified: d.verified })) as KanbanCard["documents"],
+        documents: docs.map((d) => ({ id: d.id, type: d.type, fileName: d.fileName, verified: !!d.verified })) as KanbanCard["documents"],
       };
     });
 

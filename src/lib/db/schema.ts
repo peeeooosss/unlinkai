@@ -1,9 +1,8 @@
-import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
-import { relations } from "drizzle-orm";
+import { pgTable, text, integer, boolean, timestamp } from "drizzle-orm/pg-core";
 
 // ==================== Auth.js Tables ====================
 
-export const users = sqliteTable("users", {
+export const users = pgTable("users", {
   id: text("id")
     .primaryKey()
     .$defaultFn(() => crypto.randomUUID()),
@@ -18,7 +17,7 @@ export const users = sqliteTable("users", {
     .$defaultFn(() => new Date().toISOString()),
 });
 
-export const accounts = sqliteTable("accounts", {
+export const accounts = pgTable("accounts", {
   id: text("id")
     .primaryKey()
     .$defaultFn(() => crypto.randomUUID()),
@@ -37,7 +36,7 @@ export const accounts = sqliteTable("accounts", {
   session_state: text("session_state"),
 });
 
-export const sessions = sqliteTable("sessions", {
+export const sessions = pgTable("sessions", {
   id: text("id")
     .primaryKey()
     .$defaultFn(() => crypto.randomUUID()),
@@ -48,7 +47,7 @@ export const sessions = sqliteTable("sessions", {
   expires: text("expires").notNull(),
 });
 
-export const verificationTokens = sqliteTable("verification_tokens", {
+export const verificationTokens = pgTable("verification_tokens", {
   identifier: text("identifier").notNull(),
   token: text("token").notNull().unique(),
   expires: text("expires").notNull(),
@@ -56,7 +55,7 @@ export const verificationTokens = sqliteTable("verification_tokens", {
 
 // ==================== Application Tables ====================
 
-export const students = sqliteTable("students", {
+export const students = pgTable("students", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
   email: text("email").notNull(),
@@ -99,7 +98,7 @@ export const students = sqliteTable("students", {
   status: text("status").notNull().default("complete"),
 });
 
-export const applications = sqliteTable("applications", {
+export const applications = pgTable("applications", {
   id: text("id").primaryKey(),
   studentId: text("student_id")
     .notNull()
@@ -114,7 +113,7 @@ export const applications = sqliteTable("applications", {
   updatedAt: text("updated_at").notNull(),
 });
 
-export const documents = sqliteTable("documents", {
+export const documents = pgTable("documents", {
   id: text("id").primaryKey(),
   studentId: text("student_id")
     .notNull()
@@ -123,10 +122,10 @@ export const documents = sqliteTable("documents", {
   type: text("type").notNull(),
   fileName: text("file_name").notNull(),
   uploadedAt: text("uploaded_at").notNull(),
-  verified: integer("verified", { mode: "boolean" }).notNull().default(false),
+  verified: boolean("verified").notNull().default(false),
 });
 
-export const activityLogs = sqliteTable("activity_logs", {
+export const activityLogs = pgTable("activity_logs", {
   id: text("id").primaryKey(),
   studentId: text("student_id")
     .notNull()

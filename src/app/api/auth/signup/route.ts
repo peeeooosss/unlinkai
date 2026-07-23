@@ -25,11 +25,11 @@ export async function POST(req: Request) {
     const validRoles = ["student", "agent"];
     const userRole = validRoles.includes(role) ? role : "student";
 
-    const existingUser = db
+    const existingResult = await db
       .select()
       .from(users)
-      .where(eq(users.email, email))
-      .get();
+      .where(eq(users.email, email));
+    const existingUser = existingResult[0];
 
     if (existingUser) {
       return NextResponse.json(
@@ -40,7 +40,7 @@ export async function POST(req: Request) {
 
     const hashedPassword = await bcrypt.hash(password, 12);
 
-    const newUser = db
+    const newUserResult = await db
       .insert(users)
       .values({
         name,
@@ -48,8 +48,8 @@ export async function POST(req: Request) {
         password: hashedPassword,
         role: userRole,
       })
-      .returning()
-      .get();
+      .returning();
+    const newUser = newUserResult[0];
 
     return NextResponse.json(
       { message: "Account created successfully", userId: newUser.id },
