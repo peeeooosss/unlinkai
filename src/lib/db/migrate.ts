@@ -1,6 +1,6 @@
 import postgres from "postgres";
 
-const DATABASE_URL = process.env.DATABASE_URL || "postgresql://neondb_owner:npg_OjVYdH7Q1ZnI@ep-fancy-star-az49zkms-pooler.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require";
+const DATABASE_URL = process.env.DATABASE_URL!;
 
 const sql = postgres(DATABASE_URL);
 
