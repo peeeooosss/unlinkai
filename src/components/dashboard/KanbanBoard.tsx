@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getApplications } from "@/lib/actions/applications";
 import { getStudents } from "@/lib/actions/students";
-import { getDocumentsByStudent } from "@/lib/actions/documents";
+import { getDocumentsByStudents } from "@/lib/actions/documents";
 import { updateApplicationStage } from "@/lib/actions/applications";
 import { STAGE_ORDER, STAGE_LABELS, type Stage } from "@/lib/db/schema";
 import { StudentDetailModal } from "./StudentDetailModal";
@@ -170,10 +170,14 @@ export function KanbanBoard() {
     const [apps, studs] = await Promise.all([getApplications(), getStudents()]);
     const studentMap = new Map(studs.map((s) => [s.id, s]));
 
-    const allDocs = await Promise.all(
-      studs.map((s) => getDocumentsByStudent(s.id).then((docs) => [s.id, docs] as const))
-    );
-    const docsMap = new Map(allDocs);
+    const studentIds = studs.map((s) => s.id);
+    const allDocs = await getDocumentsByStudents(studentIds);
+    const docsMap = new Map<string, typeof allDocs>();
+    for (const doc of allDocs) {
+      const existing = docsMap.get(doc.studentId) || [];
+      existing.push(doc);
+      docsMap.set(doc.studentId, existing);
+    }
 
     const kanbanCards: KanbanCard[] = apps.map((app) => {
       const student = studentMap.get(app.studentId);

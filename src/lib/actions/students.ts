@@ -61,6 +61,15 @@ export async function getStudentCount() {
   return result[0]?.count ?? 0;
 }
 
+export async function getStudentCounts() {
+  const totalResult = await db.select({ count: count() }).from(students);
+  const draftResult = await db.select({ count: count() }).from(students).where(eq(students.status, "draft"));
+  return {
+    total: totalResult[0]?.count ?? 0,
+    drafts: draftResult[0]?.count ?? 0,
+  };
+}
+
 export async function createStudent(data: {
   name: string;
   email: string;

@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import Link from "next/link";
 import {
   Eye,
   EyeOff,
@@ -314,15 +313,7 @@ export function LoginForm({ initialRole }: { initialRole?: string } = {}) {
                 </svg>
                 Google
               </Button>
-              <Link href="/signup">
-                <Button
-                  variant="outline"
-                  disabled={isLoading}
-                  className="h-10 gap-2 border-neutral-200 text-neutral-600 hover:bg-neutral-50 text-sm w-full"
-                >
-                  Sign Up
-                </Button>
-              </Link>
+
             </div>
           </div>
         </div>

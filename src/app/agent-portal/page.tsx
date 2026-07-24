@@ -1,13 +1,27 @@
 "use client";
 
 import * as React from "react";
+import dynamic from "next/dynamic";
 import { Users, AlertCircle, CheckCircle, TrendingUp, Clock } from "lucide-react";
 import { MetricCard } from "@/components/dashboard/MetricCard";
-import { KanbanBoard } from "@/components/dashboard/KanbanBoard";
 import { AttentionList } from "@/components/dashboard/AttentionList";
 import { Badge } from "@/components/ui/badge";
 import { getStudentCount } from "@/lib/actions/students";
 import { getApplicationCounts, getPendingActionCount } from "@/lib/actions/applications";
+
+const KanbanBoard = dynamic(() => import("@/components/dashboard/KanbanBoard").then((m) => m.KanbanBoard), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center h-96 rounded-xl border border-neutral-200 bg-white">
+      <div className="text-center">
+        <div className="h-8 w-8 animate-spin rounded-full border-4 border-neutral-200 border-t-blue-600 mx-auto mb-3" />
+        <p className="text-sm text-neutral-500">Loading pipeline...</p>
+      </div>
+    </div>
+  ),
+});
+
+const STALE_MS = 30_000;
 
 export default function AgentPortalDashboard() {
   const [metrics, setMetrics] = React.useState([
@@ -16,23 +30,32 @@ export default function AgentPortalDashboard() {
     { title: "Visas Approved", value: "—", trend: "", trendUp: true, icon: <CheckCircle className="h-5 w-5" /> },
     { title: "Expected Commission", value: "—", trend: "", trendUp: true, icon: <TrendingUp className="h-5 w-5" /> },
   ]);
+  const lastFetchRef = React.useRef(0);
 
   async function load() {
-    const [studentCount, appCounts, pendingCount] = await Promise.all([
-      getStudentCount(),
-      getApplicationCounts(),
-      getPendingActionCount(),
-    ]);
+    const now = Date.now();
+    if (now - lastFetchRef.current < STALE_MS) return;
+    lastFetchRef.current = now;
 
-    const visaApproved = appCounts.byStage.find((s) => s.stage === "visa_approved")?.count ?? 0;
-    const totalApps = appCounts.total;
+    try {
+      const [studentCount, appCounts, pendingCount] = await Promise.all([
+        getStudentCount(),
+        getApplicationCounts(),
+        getPendingActionCount(),
+      ]);
 
-    setMetrics([
-      { title: "Total Active Students", value: String(studentCount), trend: `${totalApps} applications`, trendUp: true, icon: <Users className="h-5 w-5" /> },
-      { title: "Pending Actions", value: String(pendingCount), trend: "needs attention", trendUp: false, icon: <AlertCircle className="h-5 w-5" /> },
-      { title: "Visas Approved", value: String(visaApproved), trend: `${Math.round((visaApproved / totalApps) * 100)}% success rate`, trendUp: true, icon: <CheckCircle className="h-5 w-5" /> },
-      { title: "Expected Commission", value: `${visaApproved} completed`, trend: `${totalApps - visaApproved} in progress`, trendUp: true, icon: <TrendingUp className="h-5 w-5" /> },
-    ]);
+      const visaApproved = appCounts.byStage.find((s) => s.stage === "visa_approved")?.count ?? 0;
+      const totalApps = appCounts.total;
+
+      setMetrics([
+        { title: "Total Active Students", value: String(studentCount), trend: `${totalApps} applications`, trendUp: true, icon: <Users className="h-5 w-5" /> },
+        { title: "Pending Actions", value: String(pendingCount), trend: "needs attention", trendUp: false, icon: <AlertCircle className="h-5 w-5" /> },
+        { title: "Visas Approved", value: String(visaApproved), trend: totalApps > 0 ? `${Math.round((visaApproved / totalApps) * 100)}% success rate` : "no data yet", trendUp: true, icon: <CheckCircle className="h-5 w-5" /> },
+        { title: "Expected Commission", value: `${visaApproved} completed`, trend: `${totalApps - visaApproved} in progress`, trendUp: true, icon: <TrendingUp className="h-5 w-5" /> },
+      ]);
+    } catch {
+      // keep current metrics
+    }
   }
 
   React.useEffect(() => {

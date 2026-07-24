@@ -9,7 +9,6 @@ export default withAuth({
       if (
         path === "/" ||
         path === "/login" ||
-        path === "/signup" ||
         path === "/hq-secure-access" ||
         path.startsWith("/api/auth")
       ) {

@@ -2,7 +2,7 @@
 
 import { db } from "@/lib/db";
 import { documents } from "@/lib/db/schema";
-import { eq, desc, count } from "drizzle-orm";
+import { eq, desc, count, inArray } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
 export async function getDocumentsByStudent(studentId: string) {
@@ -10,6 +10,15 @@ export async function getDocumentsByStudent(studentId: string) {
     .select()
     .from(documents)
     .where(eq(documents.studentId, studentId))
+    .orderBy(desc(documents.uploadedAt));
+}
+
+export async function getDocumentsByStudents(studentIds: string[]) {
+  if (studentIds.length === 0) return [];
+  return await db
+    .select()
+    .from(documents)
+    .where(inArray(documents.studentId, studentIds))
     .orderBy(desc(documents.uploadedAt));
 }
 

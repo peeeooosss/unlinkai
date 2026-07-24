@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, Phone, Search, UserPlus } from "lucide-react";
-import { getStudents } from "@/lib/actions/students";
+import { getStudents, getStudentCounts } from "@/lib/actions/students";
 import { getApplications } from "@/lib/actions/applications";
 import { STAGE_LABELS, type Stage } from "@/lib/db/schema";
 import { StudentDetailModal } from "@/components/dashboard/StudentDetailModal";
@@ -48,21 +48,30 @@ export default function StudentsPage() {
   const [newStudentId, setNewStudentId] = React.useState<string | null>(null);
   const [statusFilter, setStatusFilter] = React.useState<"all" | "draft">("all");
 
+  const lastFetchRef = React.useRef(0);
+  const STALE_MS = 30_000;
+
   React.useEffect(() => {
     loadStudents();
-    const onVisible = () => { if (document.visibilityState === "visible") loadStudents(search || undefined, statusFilter === "draft" ? "draft" : undefined); };
+    const onVisible = () => {
+      if (document.visibilityState === "visible") {
+        const now = Date.now();
+        if (now - lastFetchRef.current < STALE_MS) return;
+        loadStudents(search || undefined, statusFilter === "draft" ? "draft" : undefined);
+      }
+    };
     document.addEventListener("visibilitychange", onVisible);
     return () => document.removeEventListener("visibilitychange", onVisible);
   }, [statusFilter]);
 
   async function loadStudents(searchQuery?: string, status?: string) {
+    lastFetchRef.current = Date.now();
     setLoading(true);
     try {
-      const [studs, apps, totalAll, totalDrafts] = await Promise.all([
+      const [studs, apps, counts] = await Promise.all([
         getStudents(searchQuery || undefined, status),
         getApplications(),
-        getStudents(),
-        getStudents(undefined, "draft"),
+        getStudentCounts(),
       ]);
 
       const appMap = new Map<string, typeof apps>();
@@ -91,8 +100,8 @@ export default function StudentsPage() {
       });
 
       setStudents(rows);
-      setTotalStudents(totalAll.length);
-      setDraftCount(totalDrafts.length);
+      setTotalStudents(counts.total);
+      setDraftCount(counts.drafts);
     } catch {
       setStudents([]);
       setTotalStudents(0);
