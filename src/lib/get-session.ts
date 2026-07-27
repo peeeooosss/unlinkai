@@ -8,5 +8,6 @@ export async function getAuthenticatedUser() {
     id: (session.user as any).id as string,
     role: (session.user as any).role as string,
     name: session.user.name ?? "Agent",
+    email: session.user.email ?? "",
   };
 }
