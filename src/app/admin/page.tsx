@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, GraduationCap, FileText, TrendingUp, AlertCircle, Shield, CheckCircle, Clock } from "lucide-react";
+import { Users, GraduationCap, FileText, TrendingUp, AlertCircle, DollarSign, CheckCircle, Clock } from "lucide-react";
 import { getAdminStats, getAdminApplicationCounts } from "@/lib/actions/admin";
 import { STAGE_LABELS, type Stage } from "@/lib/db/schema";
 
@@ -172,11 +172,18 @@ export default function AdminDashboardPage() {
                   <p className="text-xs text-neutral-600">Browse students across all agents</p>
                 </div>
               </a>
-              <a href="/agent-portal" className="flex items-center gap-3 p-3 rounded-lg border border-neutral-200 hover:bg-neutral-50 transition-colors">
-                <Shield className="h-5 w-5 text-purple-600" />
+              <a href="/admin/applications" className="flex items-center gap-3 p-3 rounded-lg border border-neutral-200 hover:bg-neutral-50 transition-colors">
+                <FileText className="h-5 w-5 text-purple-600" />
                 <div>
-                  <p className="text-sm font-medium text-neutral-900">Agent Portal</p>
-                  <p className="text-xs text-neutral-600">Access the agent view as superadmin</p>
+                  <p className="text-sm font-medium text-neutral-900">All Applications</p>
+                  <p className="text-xs text-neutral-600">Browse applications across all agents</p>
+                </div>
+              </a>
+              <a href="/admin/commission" className="flex items-center gap-3 p-3 rounded-lg border border-neutral-200 hover:bg-neutral-50 transition-colors">
+                <DollarSign className="h-5 w-5 text-green-600" />
+                <div>
+                  <p className="text-sm font-medium text-neutral-900">Commission Overview</p>
+                  <p className="text-xs text-neutral-600">Track revenue by agent and stage</p>
                 </div>
               </a>
             </div>

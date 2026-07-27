@@ -4,13 +4,14 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
-import { Shield, LayoutDashboard, Users, GraduationCap, LogOut, Menu, X, ChevronDown, Briefcase } from "lucide-react";
+import { Shield, LayoutDashboard, Users, GraduationCap, FileText, DollarSign, LogOut, Menu, X, ChevronDown } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
   { label: "Agents", href: "/admin/agents", icon: Users },
   { label: "All Students", href: "/admin/students", icon: GraduationCap },
-  { label: "Agent Portal", href: "/agent-portal", icon: Briefcase },
+  { label: "Applications", href: "/admin/applications", icon: FileText },
+  { label: "Commission", href: "/admin/commission", icon: DollarSign },
 ];
 
 export function AdminSidebar() {
@@ -84,7 +85,7 @@ export function AdminSidebar() {
             {dropdownOpen && (
               <div className="absolute bottom-full left-0 right-0 mb-1 bg-white border border-neutral-200 rounded-lg shadow-lg overflow-hidden">
                 <button
-                  onClick={() => signOut({ callbackUrl: "/login" })}
+                  onClick={() => signOut({ callbackUrl: "/hq-secure-access" })}
                   className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-600 hover:bg-red-50"
                 >
                   <LogOut className="h-4 w-4" />

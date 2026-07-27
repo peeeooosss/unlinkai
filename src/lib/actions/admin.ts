@@ -136,3 +136,104 @@ export async function getAdminApplicationCounts() {
 
   return { total, byStage };
 }
+
+export async function getAllApplicationsWithAgent() {
+  const user = await getAuthenticatedUser();
+  requireSuperadmin(user);
+
+  const result = await db
+    .select({
+      id: applications.id,
+      studentId: applications.studentId,
+      studentName: students.name,
+      university: applications.university,
+      course: applications.course,
+      stage: applications.stage,
+      status: applications.status,
+      submittedAt: applications.submittedAt,
+      updatedAt: applications.updatedAt,
+      agentId: students.agentId,
+      agentName: users.name,
+    })
+    .from(applications)
+    .innerJoin(students, eq(applications.studentId, students.id))
+    .leftJoin(users, eq(students.agentId, users.id))
+    .orderBy(desc(applications.updatedAt));
+
+  return result;
+}
+
+const TUITION_RATES: Record<string, number> = {
+  lead: 0,
+  application_submitted: 0.08,
+  offer_received: 0.10,
+  visa_processing: 0.10,
+  visa_approved: 0.12,
+};
+
+const COMMISSION_BY_EDUCATION: Record<string, number> = {
+  "Undergraduate": 0.08,
+  "Postgraduate": 0.12,
+  "PhD": 0.10,
+};
+
+export async function getAdminCommissionStats() {
+  const user = await getAuthenticatedUser();
+  requireSuperadmin(user);
+
+  const allApps = await db
+    .select({
+      id: applications.id,
+      studentId: applications.studentId,
+      studentName: students.name,
+      university: applications.university,
+      course: applications.course,
+      stage: applications.stage,
+      educationLevel: students.educationLevel,
+      agentId: students.agentId,
+      agentName: users.name,
+    })
+    .from(applications)
+    .innerJoin(students, eq(applications.studentId, students.id))
+    .leftJoin(users, eq(students.agentId, users.id));
+
+  const TUITION_ESTIMATES: Record<string, number> = {
+    "Undergraduate": 25000,
+    "Postgraduate": 35000,
+    "PhD": 20000,
+  };
+
+  let totalExpected = 0;
+  let totalReceived = 0;
+  const byAgent: Record<string, { name: string; count: number; commission: number }> = {};
+  const byStage: Record<string, number> = {};
+
+  for (const app of allApps) {
+    const tuition = TUITION_ESTIMATES[app.educationLevel] ?? 30000;
+    const rate = COMMISSION_BY_EDUCATION[app.educationLevel] ?? 0.10;
+    const commission = Math.round(tuition * rate);
+
+    totalExpected += commission;
+    if (app.stage === "visa_approved") {
+      totalReceived += commission;
+    }
+
+    const agentKey = app.agentId ?? "unassigned";
+    if (!byAgent[agentKey]) {
+      byAgent[agentKey] = { name: app.agentName ?? "Unassigned", count: 0, commission: 0 };
+    }
+    byAgent[agentKey].count++;
+    byAgent[agentKey].commission += commission;
+
+    byStage[app.stage] = (byStage[app.stage] ?? 0) + commission;
+  }
+
+  return {
+    totalExpected,
+    totalReceived,
+    totalPending: totalExpected - totalReceived,
+    byAgent: Object.entries(byAgent).map(([id, data]) => ({ id, ...data })),
+    byStage: Object.entries(byStage).map(([stage, amount]) => ({ stage, amount })),
+    totalApplications: allApps.length,
+  };
+}

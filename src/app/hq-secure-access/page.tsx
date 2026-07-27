@@ -1,6 +1,6 @@
 "use client";
 
-import { LoginForm } from "@/components/auth/LoginForm";
+import { AdminLoginForm } from "@/components/auth/AdminLoginForm";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Shield, AlertTriangle } from "lucide-react";
@@ -26,7 +26,7 @@ export default function HQSecureAccessPage() {
               <span>All access is logged and monitored</span>
             </div>
           </div>
-          <LoginForm initialRole="superadmin" />
+          <AdminLoginForm />
         </div>
       </main>
       <Footer />
