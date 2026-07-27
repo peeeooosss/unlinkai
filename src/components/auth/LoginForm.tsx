@@ -22,7 +22,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-type Portal = "select" | "student" | "agent";
+type Portal = "select" | "student" | "agent" | "admin";
 
 export function LoginForm({ initialRole }: { initialRole?: string } = {}) {
   const router = useRouter();
@@ -55,6 +55,8 @@ export function LoginForm({ initialRole }: { initialRole?: string } = {}) {
         setTimeout(() => {
           if (portal === "student") {
             window.location.href = "/";
+          } else if (initialRole === "superadmin") {
+            window.location.href = "/admin";
           } else {
             window.location.href = "/agent-portal";
           }
@@ -74,6 +76,7 @@ export function LoginForm({ initialRole }: { initialRole?: string } = {}) {
   const DEMO_CREDENTIALS = {
     student: { email: "student@unilinkai.com", password: "password" },
     agent: { email: "agent@unilinkai.com", password: "password" },
+    admin: { email: "admin@unilinkai.com", password: "password" },
   };
 
   const handleBack = () => {

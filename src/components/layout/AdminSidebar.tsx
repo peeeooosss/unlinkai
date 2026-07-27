@@ -4,12 +4,13 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
-import { Shield, LayoutDashboard, Users, GraduationCap, LogOut, Menu, X, ChevronDown } from "lucide-react";
+import { Shield, LayoutDashboard, Users, GraduationCap, LogOut, Menu, X, ChevronDown, Briefcase } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
   { label: "Agents", href: "/admin/agents", icon: Users },
   { label: "All Students", href: "/admin/students", icon: GraduationCap },
+  { label: "Agent Portal", href: "/agent-portal", icon: Briefcase },
 ];
 
 export function AdminSidebar() {
