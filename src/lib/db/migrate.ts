@@ -118,6 +118,9 @@ const migrations: string[] = [
   `DO $$ BEGIN
     ALTER TABLE "verification_tokens" ADD CONSTRAINT "verification_tokens_token_unique" UNIQUE ("token");
   EXCEPTION WHEN duplicate_object THEN null; END $$`,
+  `DO $$ BEGIN
+    ALTER TABLE "students" ADD COLUMN "agent_id" text REFERENCES "users"("id");
+  EXCEPTION WHEN duplicate_column THEN null; END $$`,
 ];
 
 async function migrate() {

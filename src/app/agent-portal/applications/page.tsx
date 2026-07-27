@@ -11,6 +11,7 @@ import { StudentDetailModal } from "@/components/dashboard/StudentDetailModal";
 import { AddApplicationModal } from "@/components/dashboard/AddApplicationModal";
 import { EditApplicationModal } from "@/components/dashboard/EditApplicationModal";
 import { Button } from "@/components/ui/button";
+import { timeAgo } from "@/lib/time-ago";
 
 const stageColors: Record<string, string> = {
   lead: "bg-neutral-100 text-neutral-700",
@@ -45,6 +46,7 @@ export default function ApplicationsPage() {
   const [applications, setApplications] = React.useState<ApplicationRow[]>([]);
   const [counts, setCounts] = React.useState({ total: 0, inProgress: 0, approved: 0, pending: 0 });
   const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState<string | null>(null);
   const [selectedStudentId, setSelectedStudentId] = React.useState<string | null>(null);
   const [modalOpen, setModalOpen] = React.useState(false);
   const [addModalOpen, setAddModalOpen] = React.useState(false);
@@ -60,38 +62,44 @@ export default function ApplicationsPage() {
 
   async function loadData() {
     setLoading(true);
-    const [apps, appCounts, studs] = await Promise.all([
-      getApplications(),
-      getApplicationCounts(),
-      getStudents(),
-    ]);
+    setError(null);
+    try {
+      const [apps, appCounts, studs] = await Promise.all([
+        getApplications(),
+        getApplicationCounts(),
+        getStudents(),
+      ]);
 
-    const studentMap = new Map(studs.map((s) => [s.id, s.name]));
+      const studentMap = new Map(studs.map((s) => [s.id, s.name]));
 
-    const rows: ApplicationRow[] = apps.map((app) => ({
-      id: app.id,
-      studentName: studentMap.get(app.studentId) || "Unknown",
-      studentId: app.studentId,
-      course: app.course,
-      university: app.university,
-      stage: app.stage,
-      accommodation: app.accommodation,
-      insurance: app.insurance,
-      submittedAt: app.submittedAt,
-      updatedAt: app.updatedAt,
-    }));
+      const rows: ApplicationRow[] = apps.map((app) => ({
+        id: app.id,
+        studentName: studentMap.get(app.studentId) || "Unknown",
+        studentId: app.studentId,
+        course: app.course,
+        university: app.university,
+        stage: app.stage,
+        accommodation: app.accommodation,
+        insurance: app.insurance,
+        submittedAt: app.submittedAt,
+        updatedAt: app.updatedAt,
+      }));
 
-    const approved = appCounts.byStage.find((s) => s.stage === "visa_approved")?.count ?? 0;
-    const inProgress = appCounts.total - approved;
+      const approved = appCounts.byStage.find((s) => s.stage === "visa_approved")?.count ?? 0;
+      const inProgress = appCounts.total - approved;
 
-    setApplications(rows);
-    setCounts({
-      total: appCounts.total,
-      inProgress,
-      approved,
-      pending: appCounts.byStage.find((s) => s.stage === "lead")?.count ?? 0,
-    });
-    setLoading(false);
+      setApplications(rows);
+      setCounts({
+        total: appCounts.total,
+        inProgress,
+        approved,
+        pending: appCounts.byStage.find((s) => s.stage === "lead")?.count ?? 0,
+      });
+    } catch {
+      setError("Failed to load applications");
+    } finally {
+      setLoading(false);
+    }
   }
 
   function handleRowClick(studentId: string) {
@@ -173,6 +181,14 @@ export default function ApplicationsPage() {
             <div className="flex items-center justify-center py-8">
               <div className="h-8 w-8 animate-spin rounded-full border-4 border-neutral-300 border-t-blue-600" />
             </div>
+          ) : error ? (
+            <div className="flex items-center justify-center py-12">
+              <div className="text-center">
+                <AlertCircle className="h-10 w-10 text-amber-500 mx-auto mb-3" />
+                <p className="text-sm text-neutral-700">{error}</p>
+                <Button onClick={() => loadData()} className="mt-4" size="sm">Retry</Button>
+              </div>
+            </div>
           ) : filtered.length === 0 ? (
             <div className="text-center py-12">
               <GraduationCap className="h-10 w-10 text-neutral-300 mx-auto mb-2" />
@@ -218,7 +234,7 @@ export default function ApplicationsPage() {
                           {app.insurance === "yes" ? "Insurance Paid" : app.insurance === "no" ? "Insurance Pending" : "N/A"}
                         </Badge>
                       )}
-                      <span className="text-sm text-neutral-700">Updated: {app.updatedAt}</span>
+                      <span className="text-sm text-neutral-700">Updated: {timeAgo(app.updatedAt)}</span>
                       <div onClick={(e) => e.stopPropagation()}>
                         <EditApplicationModal application={app} onUpdated={() => loadData()} />
                       </div>

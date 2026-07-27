@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
@@ -11,12 +9,11 @@ import {
   IndianRupee,
   GraduationCap,
   BookOpen,
-  FileDown,
-  Settings,
   LogOut,
   ChevronLeft,
   ChevronRight,
   ArrowLeft,
+  Shield,
 } from "lucide-react";
 
 const navigationItems = [
@@ -25,8 +22,13 @@ const navigationItems = [
   { title: "Applications", href: "/agent-portal/applications", icon: FileText },
   { title: "Universities", href: "/agent-portal/universities", icon: GraduationCap },
   { title: "Programs", href: "/agent-portal/programs", icon: BookOpen },
-  { title: "Brochures", href: "/agent-portal/brochures", icon: FileDown },
   { title: "Commission", href: "/agent-portal/commission", icon: IndianRupee },
+];
+
+const adminNavigationItems = [
+  { title: "Admin Dashboard", href: "/admin", icon: Shield },
+  { title: "Agents", href: "/admin/agents", icon: Users },
+  { title: "All Students", href: "/admin/students", icon: GraduationCap },
 ];
 
 interface AgentSidebarProps {
@@ -39,6 +41,9 @@ export function AgentSidebar({ open, onToggle }: AgentSidebarProps) {
   const router = useRouter();
   const { data: session } = useSession();
   const user = session?.user;
+  const role = (user as any)?.role || "agent";
+
+  const items = role === "superadmin" ? adminNavigationItems : navigationItems;
 
   return (
     <aside
@@ -47,13 +52,13 @@ export function AgentSidebar({ open, onToggle }: AgentSidebarProps) {
     >
       <div className="flex h-full w-64 flex-col">
         <div className="flex h-16 items-center justify-between px-4 border-b border-neutral-200">
-          <Link href="/agent-portal" className="flex items-center gap-2" aria-label="Unilinkai Agent Portal">
+          <Link href="/agent-portal" className="flex items-center gap-2" aria-label="UniLinkAI Agent Portal">
             <div className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 to-amber-600">
               <svg className="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
               </svg>
             </div>
-            {open && <span className="font-bold text-lg text-neutral-900">Unilinkai</span>}
+            {open && <span className="font-bold text-lg text-neutral-900">UniLinkAI</span>}
           </Link>
           <Button
             variant="ghost"
@@ -67,7 +72,7 @@ export function AgentSidebar({ open, onToggle }: AgentSidebarProps) {
         </div>
 
         <nav className="flex-1 overflow-y-auto px-3 py-4 space-y-1">
-          {navigationItems.map((item) => {
+          {items.map((item) => {
             const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
             return (
               <Link
@@ -87,13 +92,6 @@ export function AgentSidebar({ open, onToggle }: AgentSidebarProps) {
 
           <div className="my-4 h-px bg-neutral-200" />
 
-          <Link
-            href="/agent-portal/settings"
-            className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-neutral-700 transition-colors"
-          >
-            <Settings className="h-5 w-5 shrink-0 text-neutral-700" aria-hidden="true" />
-            <span>Settings</span>
-          </Link>
           <button
             onClick={() => signOut({ callbackUrl: "/login" })}
             className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-neutral-700 transition-colors"
@@ -119,7 +117,7 @@ export function AgentSidebar({ open, onToggle }: AgentSidebarProps) {
                 {user?.name || "Agent"}
               </p>
               <p className="text-xs text-neutral-700 truncate capitalize">
-                {(user as any)?.role || "agent"}
+                {role}
               </p>
             </div>
           </div>

@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Production build
+build/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+LICENSE
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Netlify
+.netlify/
+
+# TypeScript build info
+*.tsbuildinfo
+next-env.d.ts

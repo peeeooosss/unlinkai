@@ -230,6 +230,7 @@ function ProgramsContent() {
   const [intakeFilter, setIntakeFilter] = React.useState(searchParams.get("intake") || "all");
   const [scholarshipOnly, setScholarshipOnly] = React.useState(searchParams.get("scholarship") === "true");
   const [workVisaOnly, setWorkVisaOnly] = React.useState(searchParams.get("workvisa") === "true");
+  const [universityFilter, setUniversityFilter] = React.useState(searchParams.get("university") || "");
   const [showFilters, setShowFilters] = React.useState(false);
   const [sortBy, setSortBy] = React.useState<"fee-asc" | "fee-desc" | "ranking" | "name">("ranking");
 
@@ -248,6 +249,7 @@ function ProgramsContent() {
       if (countryFilter !== "all" && p.region !== countryFilter) return false;
       if (levelFilter !== "all" && p.level !== levelFilter) return false;
       if (deptFilter !== "all" && p.department !== deptFilter) return false;
+      if (universityFilter && p.universityName !== universityFilter) return false;
       if (budgetFilter > 0) {
         const range = budgetRanges[budgetFilter];
         if (range && (p.fee < range.min || p.fee >= range.max)) return false;
@@ -258,7 +260,7 @@ function ProgramsContent() {
       if (workVisaOnly && !p.postStudyWorkVisa) return false;
       return true;
     });
-  }, [search, countryFilter, levelFilter, deptFilter, budgetFilter, maxIelts, intakeFilter, scholarshipOnly, workVisaOnly]);
+  }, [search, countryFilter, levelFilter, deptFilter, universityFilter, budgetFilter, maxIelts, intakeFilter, scholarshipOnly, workVisaOnly]);
 
   const sorted = React.useMemo(() => {
     const copy = [...filtered];

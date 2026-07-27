@@ -57,6 +57,7 @@ export const verificationTokens = pgTable("verification_tokens", {
 
 export const students = pgTable("students", {
   id: text("id").primaryKey(),
+  agentId: text("agent_id").notNull().references(() => users.id),
   name: text("name").notNull(),
   email: text("email").notNull(),
   phone: text("phone").notNull(),

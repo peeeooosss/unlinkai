@@ -9,7 +9,7 @@ export default withAuth({
       if (
         path === "/" ||
         path === "/login" ||
-        path === "/hq-secure-access" ||
+        path === "/colleges" ||
         path.startsWith("/api/auth")
       ) {
         return true;
@@ -25,7 +25,7 @@ export default withAuth({
         return role === "agent" || role === "superadmin";
       }
 
-      if (path.startsWith("/hq-secure-access")) {
+      if (path.startsWith("/hq-secure-access") || path.startsWith("/admin")) {
         return role === "superadmin";
       }
 
@@ -35,5 +35,5 @@ export default withAuth({
 });
 
 export const config = {
-  matcher: ["/agent-portal/:path*"],
+  matcher: ["/agent-portal/:path*", "/hq-secure-access/:path*", "/admin/:path*"],
 };

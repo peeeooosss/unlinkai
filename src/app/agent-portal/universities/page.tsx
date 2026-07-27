@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet";
+import { AddApplicationModal } from "@/components/dashboard/AddApplicationModal";
 import {
   GraduationCap,
   Search,
@@ -256,6 +257,18 @@ export default function AgentUniversitiesPage() {
   const [expandedUnis, setExpandedUnis] = React.useState<Set<string>>(new Set());
   const [selectedUni, setSelectedUni] = React.useState<UniEntry & { region: Region } | null>(null);
   const [sheetOpen, setSheetOpen] = React.useState(false);
+  const [applyModalOpen, setApplyModalOpen] = React.useState(false);
+  const [applyModalData, setApplyModalData] = React.useState<{ university: string; course: string } | null>(null);
+
+  const openApplyModal = (university: string, course: string) => {
+    setApplyModalData({ university, course });
+    setApplyModalOpen(true);
+  };
+
+  const handleApplyModalClose = () => {
+    setApplyModalOpen(false);
+    setApplyModalData(null);
+  };
 
   const regions = Object.keys(universities) as Region[];
 
@@ -503,27 +516,28 @@ export default function AgentUniversitiesPage() {
                               </div>
                             </button>
 
-                            {isUniExpanded && (
-                              <div className="bg-neutral-50 px-4 pb-4 space-y-2">
-                                <div className="flex gap-2 mb-3">
-                                  <Link
-                                    href={`/agent-portal/programs?university=${encodeURIComponent(uni.name)}`}
-                                  >
-                                    <Button size="sm" variant="outline" className="h-7 text-xs border-black text-neutral-900 hover:bg-neutral-100">
-                                      <BookOpen className="h-3 w-3 mr-1" />
-                                      View Programs
-                                    </Button>
-                                  </Link>
-                                  <Button
-                                    size="sm"
-                                    variant="outline"
-                                    className="h-7 text-xs border-black text-neutral-900 hover:bg-neutral-100"
-                                    onClick={() => openUniDetail(uni.name)}
-                                  >
-                                    <ExternalLink className="h-3 w-3 mr-1" />
-                                    Details
-                                  </Button>
-                                </div>
+{isUniExpanded && (
+  <div className="bg-neutral-50 px-4 pb-4 space-y-2">
+    <div className="flex gap-2 mb-3">
+      <Button
+        size="sm"
+        variant="outline"
+        className="h-7 text-xs border-black text-neutral-900 hover:bg-neutral-100"
+        onClick={() => openApplyModal(uni.name, uni.courses[0]?.name || "")}
+      >
+        <BookOpen className="h-3 w-3 mr-1" />
+        View Programs
+      </Button>
+      <Button
+        size="sm"
+        variant="outline"
+        className="h-7 text-xs border-black text-neutral-900 hover:bg-neutral-100"
+        onClick={() => openUniDetail(uni.name)}
+      >
+        <ExternalLink className="h-3 w-3 mr-1" />
+        Details
+      </Button>
+    </div>
                                 {uni.courses.map((c) => {
                                   const pct = commissionRates[c.level] || 10;
 
@@ -546,18 +560,19 @@ export default function AgentUniversitiesPage() {
                                             ))}
                                           </div>
                                         </div>
-                                        <div className="text-right shrink-0">
-                                          <p className="text-green-700 font-semibold text-sm">{pct}%</p>
-                                          <p className="text-[10px] text-neutral-500">commission</p>
-                                          <Button
-                                            size="sm"
-                                            variant="outline"
-                                            className="h-7 text-[10px] border-black text-neutral-900 hover:bg-neutral-100 mt-1"
-                                          >
-                                            <ExternalLink className="h-3 w-3 mr-1" />
-                                            Apply
-                                          </Button>
-                                        </div>
+<div className="text-right shrink-0">
+  <p className="text-green-700 font-semibold text-sm">{pct}%</p>
+  <p className="text-[10px] text-neutral-500">commission</p>
+  <Button
+    size="sm"
+    variant="outline"
+    className="h-7 text-[10px] border-black text-neutral-900 hover:bg-neutral-100 mt-1"
+    onClick={() => openApplyModal(uni.name, c.name)}
+  >
+    <ExternalLink className="h-3 w-3 mr-1" />
+    Apply
+  </Button>
+</div>
                                       </div>
                                     </div>
                                   );
@@ -864,6 +879,16 @@ export default function AgentUniversitiesPage() {
           )}
         </SheetContent>
       </Sheet>
+
+      {/* Add Application Modal */}
+      {applyModalOpen && applyModalData && (
+        <AddApplicationModal
+          open={applyModalOpen}
+          onOpenChange={handleApplyModalClose}
+          preselectedStudentId=""
+          onApplicationCreated={handleApplyModalClose}
+        />
+      )}
     </div>
   );
 }

@@ -41,6 +41,7 @@ import { verifyDocument } from "@/lib/actions/documents";
 import { STAGE_ORDER, STAGE_LABELS, type Stage, type Student } from "@/lib/db/schema";
 import { AddDocumentModal } from "./AddDocumentModal";
 import { EditStudentFlow } from "./EditStudentFlow";
+import { timeAgo } from "@/lib/time-ago";
 
 type StudentDetail = NonNullable<Awaited<ReturnType<typeof getStudentById>>>;
 
@@ -348,7 +349,7 @@ export function StudentDetailModal({ studentId, open, onOpenChange }: StudentDet
                                 {app.insurance === "yes" ? "Insurance Paid" : app.insurance === "no" ? "Insurance Pending" : "N/A"}
                               </Badge>
                             )}
-                            <p className="text-[10px] text-neutral-600 mt-1">Updated {app.updatedAt}</p>
+                            <p className="text-[10px] text-neutral-600 mt-1">Updated {timeAgo(app.updatedAt)}</p>
                           </div>
                         </div>
 
@@ -430,12 +431,12 @@ export function StudentDetailModal({ studentId, open, onOpenChange }: StudentDet
                               <Badge variant="secondary" className="text-[10px] !text-neutral-900">{t.testType as string}</Badge>
                               <span className="text-sm font-semibold text-neutral-900">Overall: {t.overallScore as string}</span>
                             </div>
-                            {t.testType === "IELTS" && t.listening && (
+                            {t.testType === "IELTS" && (t.listening || t.reading || t.writing || t.speaking) && (
                               <div className="grid grid-cols-4 gap-2 text-xs">
-                                <div><span className="text-neutral-500">L:</span> <span className="font-medium">{String(t.listening)}</span></div>
-                                <div><span className="text-neutral-500">R:</span> <span className="font-medium">{String(t.reading)}</span></div>
-                                <div><span className="text-neutral-500">W:</span> <span className="font-medium">{String(t.writing)}</span></div>
-                                <div><span className="text-neutral-500">S:</span> <span className="font-medium">{String(t.speaking)}</span></div>
+                                {t.listening != null && <div><span className="text-neutral-500">L:</span> <span className="font-medium">{String(t.listening)}</span></div>}
+                                {t.reading != null && <div><span className="text-neutral-500">R:</span> <span className="font-medium">{String(t.reading)}</span></div>}
+                                {t.writing != null && <div><span className="text-neutral-500">W:</span> <span className="font-medium">{String(t.writing)}</span></div>}
+                                {t.speaking != null && <div><span className="text-neutral-500">S:</span> <span className="font-medium">{String(t.speaking)}</span></div>}
                               </div>
                             )}
                             {t.testDate && <p className="text-[10px] text-neutral-500 mt-1">Taken: {String(t.testDate)}</p>}
@@ -643,7 +644,7 @@ export function StudentDetailModal({ studentId, open, onOpenChange }: StudentDet
                           <div>
                             <p className="text-sm font-medium text-neutral-900">{doc.fileName}</p>
                             <p className="text-[11px] text-neutral-700">
-                              {docTypeLabels[doc.type] || doc.type} · Uploaded {doc.uploadedAt}
+                              {docTypeLabels[doc.type] || doc.type} · Uploaded {timeAgo(doc.uploadedAt)}
                             </p>
                           </div>
                         </div>
@@ -694,7 +695,7 @@ export function StudentDetailModal({ studentId, open, onOpenChange }: StudentDet
                         <div className="flex-1">
                           <p className="text-sm text-neutral-900">{act.note}</p>
                           <p className="text-[11px] text-neutral-700 mt-0.5">
-                            {act.performedBy} · {act.createdAt}
+                            {act.performedBy} · {timeAgo(act.createdAt)}
                           </p>
                         </div>
                         <Badge variant="secondary" className="text-[10px] h-4 px-1 !text-neutral-900 flex-shrink-0">

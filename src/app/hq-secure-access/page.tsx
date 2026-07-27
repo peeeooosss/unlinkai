@@ -26,7 +26,7 @@ export default function HQSecureAccessPage() {
               <span>All access is logged and monitored</span>
             </div>
           </div>
-          <LoginForm />
+          <LoginForm initialRole="superadmin" />
         </div>
       </main>
       <Footer />
