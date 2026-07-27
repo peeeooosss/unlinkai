@@ -13,6 +13,7 @@ export default withAuth({
         path === "/" ||
         path === "/login" ||
         path === "/colleges" ||
+        path === "/hq-secure-access" ||
         path.startsWith("/api/auth")
       ) {
         return true;
