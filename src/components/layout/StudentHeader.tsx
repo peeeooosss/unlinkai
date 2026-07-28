@@ -9,8 +9,8 @@ export function StudentHeader({ onMenuClick }: { onMenuClick: () => void }) {
   const user = session?.user;
 
   return (
-    <header className="sticky top-0 z-40 bg-white border-b border-neutral-200">
-      <div className="flex h-16 items-center justify-between px-4 md:px-6">
+    <header className="sticky top-0 z-40 h-16 border-b border-slate-200 bg-white flex items-center justify-between px-6 shrink-0">
+      <div className="flex h-full items-center justify-between w-full">
         <div className="flex items-center gap-4">
           <button
             onClick={onMenuClick}

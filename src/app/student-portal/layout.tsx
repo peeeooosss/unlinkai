@@ -10,11 +10,13 @@ export default function StudentPortalLayout({ children }: { children: React.Reac
 
   return (
     <SessionProvider>
-      <div className="min-h-screen bg-neutral-50">
+      <div className="flex h-screen w-full overflow-hidden bg-slate-50/50">
         <StudentSidebar open={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
-        <div className="flex flex-col flex-1 lg:ml-64">
+        <div className="flex-1 flex flex-col h-screen overflow-hidden w-full min-w-0">
           <StudentHeader onMenuClick={() => setSidebarOpen(true)} />
-          <main className="flex-1 p-4 md:p-6 lg:p-8">{children}</main>
+          <main className="flex-1 p-6 overflow-y-auto w-full space-y-6">
+            {children}
+          </main>
         </div>
       </div>
     </SessionProvider>

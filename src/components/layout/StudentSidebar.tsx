@@ -45,13 +45,12 @@ export function StudentSidebar({ open, onToggle }: { open: boolean; onToggle: ()
 
   return (
     <aside
-      className={`relative flex h-full shrink-0 flex-col bg-white transition-all duration-300 ease-in-out ${
+      className={`fixed inset-y-0 left-0 z-50 flex flex-col bg-white border-r border-slate-200 transition-all duration-300 ease-in-out ${
         open ? "w-64" : "w-0"
       }`}
-      style={{ width: open ? 256 : 0 }}
     >
       <div className="flex h-full w-64 flex-col">
-        <div className="flex h-16 items-center justify-between px-4 border-b border-neutral-200">
+        <div className="flex h-16 items-center justify-between px-4 border-b border-slate-200">
           <Link href="/student-portal" className="flex items-center gap-2" aria-label="UniLinkAI Student Portal">
             <div className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-700 to-purple-600">
               <svg className="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -92,7 +91,7 @@ export function StudentSidebar({ open, onToggle }: { open: boolean; onToggle: ()
           })}
         </nav>
 
-        <div className="border-t border-neutral-200 p-4">
+        <div className="border-t border-slate-200 p-4">
           <div className="flex items-center gap-3">
             <div className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-700 to-purple-600">
               {user?.image ? (
