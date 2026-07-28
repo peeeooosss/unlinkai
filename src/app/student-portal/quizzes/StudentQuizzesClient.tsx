@@ -83,8 +83,10 @@ export function StudentQuizzesClient({ quizzes }: StudentQuizzesClientProps) {
             <div className="flex flex-col sm:flex-row gap-3">
               {quiz.attempt && !quiz.attempt.completedAt ? (
                 <Button asChild variant="default" className="flex-1">
-                  <PlayCircle className="h-4 w-4 mr-2" />
-                  Resume Quiz
+                  <Link href={`/student-portal/quizzes/${quiz.id}`}>
+                    <PlayCircle className="h-4 w-4 mr-2" />
+                    Resume Quiz
+                  </Link>
                 </Button>
               ) : quiz.attemptsUsed >= quiz.maxAttempts ? (
                 <Button variant="outline" className="flex-1" disabled>
@@ -92,18 +94,20 @@ export function StudentQuizzesClient({ quizzes }: StudentQuizzesClientProps) {
                 </Button>
               ) : quiz.attempt && quiz.attempt.completedAt ? (
                 <>
-                  <Button asChild variant="default" className="flex-1" disabled>
+                  <Button variant="outline" className="flex-1" disabled>
                     <CheckCircle className="h-4 w-4 mr-2" />
                     Completed
                   </Button>
-                  <Button asChild variant="outline" className="flex-1">
+                  <Button asChild variant="default" className="flex-1">
                     <Link href={`/student-portal/quizzes/${quiz.id}/attempts/${quiz.attempt.id}`}>View Results</Link>
                   </Button>
                 </>
               ) : (
                 <Button asChild variant="default" className="flex-1">
-                  <PlayCircle className="h-4 w-4 mr-2" />
-                  Start Quiz
+                  <Link href={`/student-portal/quizzes/${quiz.id}`}>
+                    <PlayCircle className="h-4 w-4 mr-2" />
+                    Start Quiz
+                  </Link>
                 </Button>
               )}
             </div>

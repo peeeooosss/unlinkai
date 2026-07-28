@@ -43,8 +43,7 @@ export default function StudentCoursesClient({ courses }: StudentCoursesClientPr
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {courses.map((course) => (
-          <Link key={course.id} href={`/student-portal/courses/${course.id}`}>
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+            <Card key={course.id} className="overflow-hidden hover:shadow-lg transition-shadow">
             {course.thumbnailUrl && (
               <div className="relative h-40 bg-muted">
                 <img
@@ -108,11 +107,12 @@ export default function StudentCoursesClient({ courses }: StudentCoursesClientPr
                 className="w-full mt-4"
                 variant={course.enrollmentStatus === "completed" ? "secondary" : "default"}
               >
-                {course.enrollmentStatus === "completed" ? "Review Course" : "Continue Learning"}
+                <Link href={`/student-portal/courses/${course.id}`}>
+                  {course.enrollmentStatus === "completed" ? "Review Course" : "Continue Learning"}
+                </Link>
               </Button>
             </CardContent>
           </Card>
-        </Link>
       ))}
       </div>
     </div>
