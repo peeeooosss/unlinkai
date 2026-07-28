@@ -54,7 +54,7 @@ export function LoginForm({ initialRole }: { initialRole?: string } = {}) {
         setSuccess(true);
         setTimeout(() => {
           if (portal === "student") {
-            window.location.href = "/";
+            window.location.href = "/student-portal";
           } else if (initialRole === "superadmin") {
             window.location.href = "/admin";
           } else {
