@@ -1,41 +1,35 @@
-import { getAuthenticatedUser } from "@/lib/get-session";
-import { getStudentDashboardData } from "@/lib/actions/lms-courses";
+import { getDashboardData } from "@/lib/actions/dashboard";
 import { StudentPortalDashboard } from "./StudentPortalDashboard";
 
 export default async function StudentPortalPage() {
-  const user = await getAuthenticatedUser();
-  
-  let dashboardData: Awaited<ReturnType<typeof getStudentDashboardData>> = {
-    enrollments: [],
-    upcomingAssignments: [],
-    recentAnnouncements: [],
-    upcomingQuizzes: [],
-  };
-  
-  if (user?.role === "student") {
-    try {
-      const student = await getStudentByEmail(user.email);
-      if (student) {
-        dashboardData = await getStudentDashboardData(student.id);
-      }
-    } catch (error) {
-      console.error("Failed to load dashboard data:", error);
-    }
+  let dashboardData;
+
+  try {
+    dashboardData = await getDashboardData();
+  } catch (error) {
+    console.error("Failed to load dashboard data:", error);
+    dashboardData = {
+      student: { name: "Student", email: "" },
+      enrollments: [],
+      upcomingAssignments: [],
+      upcomingQuizzes: [],
+      recentAnnouncements: [],
+      todaySchedule: [],
+      recentGrades: [],
+      gpa: 0,
+      unreadNotifications: 0,
+      activeSemester: null,
+      daysRemaining: 0,
+      completedLessons: 0,
+      totalLessons: 0,
+      stats: {
+        totalCourses: 0,
+        totalAssignmentsDue: 0,
+        totalQuizzesDue: 0,
+        averageProgress: 0,
+      },
+    } as any;
   }
 
-  return (
-    <StudentPortalDashboard 
-      dashboardData={dashboardData}
-      user={{ name: user?.name ?? "Student", email: user?.email ?? "" }}
-    />
-  );
-}
-
-async function getStudentByEmail(email: string) {
-  const { db } = await import("@/lib/db");
-  const { students } = await import("@/lib/db/schema");
-  const { eq } = await import("drizzle-orm");
-  
-  const result = await db.select().from(students).where(eq(students.email, email)).limit(1);
-  return result[0] ?? null;
+  return <StudentPortalDashboard dashboardData={dashboardData} />;
 }

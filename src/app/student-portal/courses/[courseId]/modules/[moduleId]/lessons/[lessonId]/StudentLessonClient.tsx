@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
-import { Play, CheckCircle, Lock, ChevronLeft, ChevronRight, Menu, X } from "lucide-react";
+import { Play, CheckCircle, Lock, ChevronLeft, ChevronRight, Menu, X, Save, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -259,22 +260,87 @@ export function StudentLessonClient({ data, studentId, courseId, moduleId }: Stu
                 <TabsList>
                   <TabsTrigger value="content">Content</TabsTrigger>
                   <TabsTrigger value="notes">Notes</TabsTrigger>
-                  <TabsTrigger value="resources">Resources</TabsTrigger>
                 </TabsList>
                 <TabsContent value="content">
                   <p className="text-muted-foreground">Lesson content displayed above.</p>
                 </TabsContent>
                 <TabsContent value="notes">
-                  <p className="text-muted-foreground">Personal notes feature coming soon.</p>
-                </TabsContent>
-                <TabsContent value="resources">
-                  <p className="text-muted-foreground">Additional resources coming soon.</p>
+                  <NotesTab lessonId={data.lesson.id} studentId={studentId} />
                 </TabsContent>
               </Tabs>
             </div>
           </div>
         </main>
       </div>
+    </div>
+  );
+}
+
+function NotesTab({ lessonId, studentId }: { lessonId: string; studentId: string }) {
+  const [notes, setNotes] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [saved, setSaved] = useState(false);
+
+  useEffect(() => {
+    // Load existing notes
+    const loadNotes = async () => {
+      try {
+        const res = await fetch(`/api/notes?lessonId=${lessonId}`);
+        if (res.ok) {
+          const data = await res.json();
+          if (data.content) setNotes(data.content);
+        }
+      } catch (e) {
+        console.error("Failed to load notes:", e);
+      }
+    };
+    loadNotes();
+  }, [lessonId]);
+
+  const handleSave = async () => {
+    setSaving(true);
+    try {
+      const res = await fetch("/api/notes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ lessonId, content: notes }),
+      });
+      if (res.ok) {
+        setSaved(true);
+        setTimeout(() => setSaved(false), 2000);
+      }
+    } catch (e) {
+      console.error("Failed to save notes:", e);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <div className="space-y-3">
+      <div className="flex items-center justify-between">
+        <p className="text-sm font-medium text-neutral-700 flex items-center gap-2">
+          <BookOpen className="h-4 w-4" />
+          Personal Notes
+        </p>
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={handleSave}
+          disabled={saving}
+          className="gap-1"
+        >
+          {saving ? "Saving..." : saved ? "Saved!" : <><Save className="h-3.5 w-3.5" /> Save</>}
+        </Button>
+      </div>
+      <Textarea
+        value={notes}
+        onChange={(e) => setNotes(e.target.value)}
+        placeholder="Take notes for this lesson... Your notes are saved automatically when you click Save."
+        rows={8}
+        className="resize-none"
+      />
+      <p className="text-[10px] text-neutral-400">Notes are private and only visible to you.</p>
     </div>
   );
 }

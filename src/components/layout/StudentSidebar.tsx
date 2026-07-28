@@ -18,16 +18,23 @@ import {
   Award,
   FileText,
   Settings,
+  Clock,
+  MessageSquare,
+  GraduationCap,
+  FolderOpen,
 } from "lucide-react";
 
 const navigationItems = [
   { title: "Dashboard", href: "/student-portal", icon: LayoutDashboard },
   { title: "My Courses", href: "/student-portal/courses", icon: BookOpen },
+  { title: "Schedule", href: "/student-portal/schedule", icon: Clock },
   { title: "Assignments", href: "/student-portal/assignments", icon: ClipboardCheck },
   { title: "Quizzes", href: "/student-portal/quizzes", icon: HelpCircle },
+  { title: "Grades", href: "/student-portal/grades", icon: GraduationCap },
+  { title: "Discussions", href: "/student-portal/discussions", icon: MessageSquare },
+  { title: "Resources", href: "/student-portal/resources", icon: FolderOpen },
   { title: "Attendance", href: "/student-portal/attendance", icon: Calendar },
   { title: "Announcements", href: "/student-portal/announcements", icon: Bell },
-  { title: "Progress", href: "/student-portal/progress", icon: Award },
   { title: "Documents", href: "/student-portal/documents", icon: FileText },
 ];
 

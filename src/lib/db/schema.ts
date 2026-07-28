@@ -341,6 +341,135 @@ export const attendance = pgTable("attendance", {
   createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
 });
 
+// ==================== MVP LMS Tables ====================
+
+export const semesters = pgTable("semesters", {
+  id: text("id").primaryKey(),
+  title: text("title").notNull(),
+  description: text("description"),
+  startDate: text("start_date").notNull(),
+  endDate: text("end_date").notNull(),
+  isActive: boolean("is_active").notNull().default(true),
+  orderIndex: integer("order_index").notNull().default(0),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
+export const courseSemesters = pgTable("course_semesters", {
+  id: text("id").primaryKey(),
+  courseId: text("course_id").notNull().references(() => courses.id, { onDelete: "cascade" }),
+  semesterId: text("semester_id").notNull().references(() => semesters.id, { onDelete: "cascade" }),
+  credits: integer("credits").notNull().default(0),
+  isRequired: boolean("is_required").notNull().default(true),
+  orderIndex: integer("order_index").notNull().default(0),
+});
+
+export const grades = pgTable("grades", {
+  id: text("id").primaryKey(),
+  studentId: text("student_id").notNull().references(() => students.id, { onDelete: "cascade" }),
+  courseId: text("course_id").notNull().references(() => courses.id, { onDelete: "cascade" }),
+  moduleId: text("module_id").references(() => modules.id),
+  type: text("type").notNull(),
+  title: text("title").notNull(),
+  score: integer("score").notNull(),
+  maxScore: integer("max_score").notNull(),
+  weight: integer("weight").notNull().default(1),
+  letterGrade: text("letter_grade"),
+  comments: text("comments"),
+  gradedAt: text("graded_at").notNull(),
+  gradedBy: text("graded_by"),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
+export const discussions = pgTable("discussions", {
+  id: text("id").primaryKey(),
+  courseId: text("course_id").notNull().references(() => courses.id, { onDelete: "cascade" }),
+  moduleId: text("module_id").references(() => modules.id),
+  authorId: text("author_id").notNull(),
+  authorName: text("author_name").notNull(),
+  authorRole: text("author_role").notNull().default("student"),
+  title: text("title").notNull(),
+  content: text("content").notNull(),
+  isPinned: boolean("is_pinned").notNull().default(false),
+  isLocked: boolean("is_locked").notNull().default(false),
+  replyCount: integer("reply_count").notNull().default(0),
+  lastReplyAt: text("last_reply_at"),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+  updatedAt: text("updated_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
+export const discussionReplies = pgTable("discussion_replies", {
+  id: text("id").primaryKey(),
+  discussionId: text("discussion_id").notNull().references(() => discussions.id, { onDelete: "cascade" }),
+  authorId: text("author_id").notNull(),
+  authorName: text("author_name").notNull(),
+  authorRole: text("author_role").notNull().default("student"),
+  content: text("content").notNull(),
+  isAnswer: boolean("is_answer").notNull().default(false),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
+export const resources = pgTable("resources", {
+  id: text("id").primaryKey(),
+  courseId: text("course_id").notNull().references(() => courses.id, { onDelete: "cascade" }),
+  moduleId: text("module_id").references(() => modules.id),
+  title: text("title").notNull(),
+  description: text("description"),
+  type: text("type").notNull(),
+  url: text("url"),
+  fileUrl: text("file_url"),
+  isRequired: boolean("is_required").notNull().default(false),
+  orderIndex: integer("order_index").notNull().default(0),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
+export const notifications = pgTable("notifications", {
+  id: text("id").primaryKey(),
+  userId: text("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  type: text("type").notNull(),
+  title: text("title").notNull(),
+  message: text("message").notNull(),
+  link: text("link"),
+  isRead: boolean("is_read").notNull().default(false),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
+export const schedules = pgTable("schedules", {
+  id: text("id").primaryKey(),
+  courseId: text("course_id").notNull().references(() => courses.id, { onDelete: "cascade" }),
+  title: text("title").notNull(),
+  description: text("description"),
+  dayOfWeek: integer("day_of_week").notNull(),
+  startTime: text("start_time").notNull(),
+  endTime: text("end_time").notNull(),
+  location: text("location"),
+  type: text("type").notNull().default("class"),
+  startDate: text("start_date"),
+  endDate: text("end_date"),
+  isActive: boolean("is_active").notNull().default(true),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
+export const lessonNotes = pgTable("lesson_notes", {
+  id: text("id").primaryKey(),
+  studentId: text("student_id").notNull().references(() => students.id, { onDelete: "cascade" }),
+  lessonId: text("lesson_id").notNull().references(() => lessons.id, { onDelete: "cascade" }),
+  content: text("content").notNull(),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+  updatedAt: text("updated_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
+export const lessonProgress = pgTable("lesson_progress", {
+  id: text("id").primaryKey(),
+  studentId: text("student_id").notNull().references(() => students.id, { onDelete: "cascade" }),
+  lessonId: text("lesson_id").notNull().references(() => lessons.id, { onDelete: "cascade" }),
+  status: text("status").notNull().default("not_started"),
+  progressPercent: integer("progress_percent").notNull().default(0),
+  startedAt: text("started_at"),
+  completedAt: text("completed_at"),
+  lastAccessedAt: text("last_accessed_at"),
+  createdAt: text("created_at").notNull().$defaultFn(() => new Date().toISOString()),
+});
+
 // ==================== Types ====================
 
 export type User = typeof users.$inferSelect;
@@ -361,6 +490,16 @@ export type QuizAttempt = typeof quizAttempts.$inferSelect;
 export type QuizAnswer = typeof quizAnswers.$inferSelect;
 export type Announcement = typeof announcements.$inferSelect;
 export type Attendance = typeof attendance.$inferSelect;
+export type Semester = typeof semesters.$inferSelect;
+export type CourseSemester = typeof courseSemesters.$inferSelect;
+export type Grade = typeof grades.$inferSelect;
+export type Discussion = typeof discussions.$inferSelect;
+export type DiscussionReply = typeof discussionReplies.$inferSelect;
+export type Resource = typeof resources.$inferSelect;
+export type Notification = typeof notifications.$inferSelect;
+export type Schedule = typeof schedules.$inferSelect;
+export type LessonNote = typeof lessonNotes.$inferSelect;
+export type LessonProgressRecord = typeof lessonProgress.$inferSelect;
 
 export const STAGE_ORDER = [
   "lead",
